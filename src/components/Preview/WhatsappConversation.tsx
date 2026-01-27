@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import bgWhatsapp from "../../assets/1.png";
 import { WhatsappInputBar } from "./WhatsappInputBar";
 import type { WhatsappData } from "./whatsappTypes";
+import respuestasClienteData from "../../data/respuestasCliente.json";
 import {
   MessageGroup,
   DayChip,
@@ -126,6 +127,12 @@ function pick<T>(arr: readonly T[], rng: () => number) {
   return arr[Math.floor(rng() * arr.length)];
 }
 
+function getFirstName(fullName: string) {
+  const cleaned = fullName.trim();
+  if (!cleaned) return "";
+  return cleaned.split(/\s+/)[0] ?? "";
+}
+
 function linesToSpans(lines: string[]) {
   return lines.map((line, idx) => (
     <span key={`${idx}-${line.slice(0, 8)}`}>{line}</span>
@@ -144,13 +151,14 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
     const nombreAsesor = data.nombreAsesor?.trim()
       ? data.nombreAsesor.trim()
       : "Maria Perez";
+    const nombreAsesorFirst = getFirstName(nombreAsesor) || "Maria";
 
-    const trato = rng() < 0.5 ? "Sr." : "Sra.";
+
 
     const firma = "Asesora de Impulsa A365";
 
     const firstMessageLines = [
-      `${saludo} ${trato} ${nombreCliente}.`,
+      `${saludo} Sr(a) ${nombreCliente}.`,
       `Le saluda ${nombreAsesor} de la empresa Impulsa A365 por encargo del Banco de la Nacion.`,
       `Ha sido un gusto contactarlo y de acuerdo con la llamada telefonica que tuvimos en la ${tramo}, puede acercarse a la agencia mas cercana con su DNI, boleta de pago y tarjeta Multired para realizar el desembolso y asi pueda aprovechar esta super promocion.`,
       "Desea que le envie por este medio, la propuesta que hoy conversamos?",
@@ -159,13 +167,9 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
       firma,
     ];
 
-    const respuestasCliente = [
-      "Hola, si por favor envieme la propuesta.",
-      "Gracias, quedo atento(a) a la propuesta.",
-      "De acuerdo, puede enviarla por aqui.",
-      "Buenas, si me la puede compartir por este medio.",
-      "Ok, espero la propuesta. Gracias.",
-    ];
+    const respuestasCliente = respuestasClienteData;
+    const normalizeReply = (lines: string[]) =>
+      lines.map((line) => line.replace(/\{asesor\}/g, nombreAsesorFirst));
 
     const cierresAsesor = [
       "Perfecto, en seguida se la envio.",
@@ -202,7 +206,7 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
       {
         side: "in" as const,
         time: formatTimeShort(t2),
-        lines: [pick(respuestasCliente, rng)],
+        lines: normalizeReply(pick(respuestasCliente, rng)),
       },
       {
         side: "out" as const,
