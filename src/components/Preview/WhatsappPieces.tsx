@@ -245,6 +245,13 @@ export function Bubble({
                   aria-hidden="true"
                   className="inline-flex h-0 pt-0 pb-0 align-middle invisible pe-1 ps-1 leading-3.75 text-[0.6875rem]"
                 >
+                  {
+                    isOut
+                    ? 
+                    <span className="w-4.75 shrink-0 grow-0"></span> 
+                    :
+                    <span></span>
+                  }
                   <span className="shrink-0 grow-0">{time ?? ""}</span>
                 </span>
               </span>

@@ -1,11 +1,13 @@
+import { useMemo } from "react";
 import bgWhatsapp from "../../assets/1.png";
 import { WhatsappInputBar } from "./WhatsappInputBar";
 import type { WhatsappData } from "./whatsappTypes";
-import { 
+import {
   MessageGroup,
   DayChip,
-  Bubble
-} from "./WhatsappPieces"
+  Bubble,
+  type MsgStatus,
+} from "./WhatsappPieces";
 
 function getPeruDateParts(date: Date) {
   const parts = new Intl.DateTimeFormat("en-US", {
@@ -74,7 +76,148 @@ function getDayChipText(fechaHora: string) {
   return formatDateDMY(input);
 }
 
+function parseLocalDateTime(fechaHora: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})$/.exec(
+    fechaHora.trim()
+  );
+  if (!match) return null;
+  const [, y, m, d, h, min] = match;
+  return new Date(
+    Number(y),
+    Number(m) - 1,
+    Number(d),
+    Number(h),
+    Number(min)
+  );
+}
+
+function formatTimeShort(date: Date) {
+  const hours24 = date.getHours();
+  const hours12 = hours24 % 12 || 12;
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const period = hours24 >= 12 ? "p. m." : "a. m.";
+  return `${hours12}:${minutes} ${period}`;
+}
+
+function getTimeOfDayParts(date: Date) {
+  const hour = date.getHours();
+
+  if (hour < 12) {
+    return { saludo: "Buenos dias", tramo: "manana" };
+  }
+
+  if (hour < 19) {
+    return { saludo: "Buenas tardes", tramo: "tarde" };
+  }
+
+  return { saludo: "Buenas noches", tramo: "noche" };
+}
+
+function mulberry32(seed: number) {
+  return function () {
+    let t = (seed += 0x6d2b79f5);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function pick<T>(arr: readonly T[], rng: () => number) {
+  return arr[Math.floor(rng() * arr.length)];
+}
+
+function linesToSpans(lines: string[]) {
+  return lines.map((line, idx) => (
+    <span key={`${idx}-${line.slice(0, 8)}`}>{line}</span>
+  ));
+}
+
 export function WhatsappConversation({ data }: { data: WhatsappData }) {
+  const messages = useMemo(() => {
+    const seed = Math.floor((Date.now() + Math.random() * 1_000_000) % 1_000_000_000);
+    const rng = mulberry32(seed);
+
+    const baseDate = parseLocalDateTime(data.fechaHora) ?? new Date();
+    const { saludo, tramo } = getTimeOfDayParts(baseDate);
+
+    const nombreCliente = data.nombre?.trim() ? data.nombre.trim() : "Pedro Vazquez";
+    const nombreAsesor = data.nombreAsesor?.trim()
+      ? data.nombreAsesor.trim()
+      : "Maria Perez";
+
+    const trato = rng() < 0.5 ? "Sr." : "Sra.";
+
+    const firma = "Asesora de Impulsa A365";
+
+    const firstMessageLines = [
+      `${saludo} ${trato} ${nombreCliente}.`,
+      `Le saluda ${nombreAsesor} de la empresa Impulsa A365 por encargo del Banco de la Nacion.`,
+      `Ha sido un gusto contactarlo y de acuerdo con la llamada telefonica que tuvimos en la ${tramo}, puede acercarse a la agencia mas cercana con su DNI, boleta de pago y tarjeta Multired para realizar el desembolso y asi pueda aprovechar esta super promocion.`,
+      "Desea que le envie por este medio, la propuesta que hoy conversamos?",
+      "Cualquier consulta, estoy para apoyarlo.",
+      `${nombreAsesor}`,
+      firma,
+    ];
+
+    const respuestasCliente = [
+      "Hola, si por favor envieme la propuesta.",
+      "Gracias, quedo atento(a) a la propuesta.",
+      "De acuerdo, puede enviarla por aqui.",
+      "Buenas, si me la puede compartir por este medio.",
+      "Ok, espero la propuesta. Gracias.",
+    ];
+
+    const cierresAsesor = [
+      "Perfecto, en seguida se la envio.",
+      "Listo, ya le comparto los detalles.",
+      "Con gusto, envio la propuesta ahora mismo.",
+      "Entendido, le envio la propuesta en un momento.",
+    ];
+
+    const detalleBase = [
+      "Propuesta:",
+      data.monto?.trim() ? `- Monto: ${data.monto}` : "- Monto: N/A",
+      data.tasa?.trim() ? `- Tasa: ${data.tasa}` : "- Tasa: N/A",
+      data.cuota?.trim() ? `- Cuota: ${data.cuota}` : "- Cuota: N/A",
+      data.plazo?.trim() ? `- Plazo: ${data.plazo}` : "- Plazo: N/A",
+    ];
+
+    const t1 = new Date(baseDate);
+    const t2 = new Date(baseDate);
+    t2.setMinutes(t2.getMinutes() + (1 + Math.floor(rng() * 4)));
+    const t3 = new Date(t2);
+    t3.setMinutes(t3.getMinutes() + (1 + Math.floor(rng() * 3)));
+    const t4 = new Date(t3);
+    t4.setMinutes(t4.getMinutes() + (1 + Math.floor(rng() * 3)));
+
+    const status: MsgStatus = rng() < 0.7 ? "read" : "delivered";
+
+    return [
+      {
+        side: "out" as const,
+        time: formatTimeShort(t1),
+        status,
+        lines: firstMessageLines,
+      },
+      {
+        side: "in" as const,
+        time: formatTimeShort(t2),
+        lines: [pick(respuestasCliente, rng)],
+      },
+      {
+        side: "out" as const,
+        time: formatTimeShort(t3),
+        status,
+        lines: [pick(cierresAsesor, rng)],
+      },
+      {
+        side: "out" as const,
+        time: formatTimeShort(t4),
+        status,
+        lines: detalleBase,
+      },
+    ];
+  }, [data]);
 
   return (
     <div className="w-full h-full">
@@ -91,21 +234,22 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
             <div className="w-full h-full">
               <DayChip text={getDayChipText(data.fechaHora)} />
               
-              <MessageGroup>
-                <Bubble side="in" firstInGroup time="8:35 a. m." >
-                  Hola, te dejo el resumen del registro para validar.
-                </Bubble>
-                <Bubble side="in"  time="8:35 a. m." >
-                  <span>hola</span>
-                  <span>hola</span>
-                </Bubble>
-              </MessageGroup>
-              <MessageGroup>
-                 <Bubble side="out" firstInGroup time="8:35 a. m." >
-                  Hola, te dejo el resumen del registro para validar.
-                </Bubble>
-                
-              </MessageGroup>
+              {messages.map((msg, idx) => {
+                const prev = messages[idx - 1];
+                const firstInGroup = !prev || prev.side !== msg.side;
+                return (
+                  <MessageGroup key={`${idx}-${msg.time}-${msg.side}`}>
+                    <Bubble
+                      side={msg.side}
+                      firstInGroup={firstInGroup}
+                      time={msg.time}
+                      status={msg.status}
+                    >
+                      {linesToSpans(msg.lines)}
+                    </Bubble>
+                  </MessageGroup>
+                );
+              })}
             </div>
             
           </div>
