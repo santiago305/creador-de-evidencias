@@ -12,7 +12,7 @@ export function PreviewBlockWhatsapp({ data }: PreviewProps) {
     <div className="w-full h-full bg-[#efeae2] relative">
       {/* Layout: SOLO chat + panel derecho (sin lista de chats) */}
       <div className="flex w-full h-full">
-        <div className="flex-2 min-w-0 flex flex-col">
+        <div className="flex-5 min-w-0 flex flex-col">
           <WhatsappHeaderUser data={data} />
 
           <WhatsappConversation data={data} />

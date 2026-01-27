@@ -20,7 +20,7 @@ function formatTelefonoPE(phone?: string) {
 /* --------- componente --------- */
 export function WhatsappRightAside({ data }: { data: WhatsappData }) {
   return (
-    <aside className="w-45 border-l border-black/5 bg-white/95 flex-1 min-h-0 flex flex-col">
+    <aside className="w-45 border-l border-black/5 bg-white/95 flex-2 min-h-0 flex flex-col">
 
         {/* ---------- HEADER ---------- */}
         <div className="w-full py-2 px-3 bg-white shrink-0">
@@ -34,7 +34,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 className="h-9 w-9 grid place-items-center rounded-full hover:bg-black/5 active:bg-black/10 transition text-[#111b21]"
               >
                 {/* X icon */}
-                <svg viewBox="0 0 24 24" height="22" width="22" fill="none">
+                <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
                   <path
                     d="M12 13.4L7.09999 18.3C6.91665 18.4834 6.68332 18.575 6.39999 18.575C6.11665 18.575 5.88332 18.4834 5.69999 18.3C5.51665 18.1167 5.42499 17.8834 5.42499 17.6C5.42499 17.3167 5.51665 17.0834 5.69999 16.9L10.6 12L5.69999 7.10005C5.51665 6.91672 5.42499 6.68338 5.42499 6.40005C5.42499 6.11672 5.51665 5.88338 5.69999 5.70005C5.88332 5.51672 6.11665 5.42505 6.39999 5.42505C6.68332 5.42505 6.91665 5.51672 7.09999 5.70005L12 10.6L16.9 5.70005C17.0833 5.51672 17.3167 5.42505 17.6 5.42505C17.8833 5.42505 18.1167 5.51672 18.3 5.70005C18.4833 5.88338 18.575 6.11672 18.575 6.40005C18.575 6.68338 18.4833 6.91672 18.3 7.10005L13.4 12L18.3 16.9C18.4833 17.0834 18.575 17.3167 18.575 17.6C18.575 17.8834 18.4833 18.1167 18.3 18.3C18.1167 18.4834 17.8833 18.575 17.6 18.575C17.3167 18.575 17.0833 18.4834 16.9 18.3L12 13.4Z"
                     fill="currentColor"
@@ -42,7 +42,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 </svg>
               </button>
 
-              <div className="text-[13px] font-medium text-[#111b21]">
+              <div className="text-[12px] font-medium text-[#111b21]">
                 Info. del contacto
               </div>
             </div>
@@ -53,7 +53,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               aria-label="Editar"
               className="h-9 w-9 grid place-items-center rounded-full hover:bg-black/5 active:bg-black/10 transition text-[#111b21]"
             >
-              <svg viewBox="0 0 24 24" height="22" width="22" fill="none">
+              <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
                 <path
                   d="M5 18.9999H6.4L16.2 9.22488L14.775 7.79988L5 17.5999V18.9999ZM4 20.9999C3.71667 20.9999 3.47917 20.904 3.2875 20.7124C3.09583 20.5207 3 20.2832 3 19.9999V17.5749C3 17.3082 3.05 17.054 3.15 16.8124C3.25 16.5707 3.39167 16.3582 3.575 16.1749L16.2 3.57488C16.3833 3.39154 16.6 3.24988 16.85 3.14988C17.1 3.04988 17.3583 2.99988 17.625 2.99988C17.8917 2.99988 18.1458 3.04988 18.3875 3.14988C18.6292 3.24988 18.85 3.39988 19.05 3.59988L20.425 4.99988C20.625 5.18321 20.7708 5.39571 20.8625 5.63738C20.9542 5.87904 21 6.13321 21 6.39988C21 6.64988 20.9542 6.89988 20.8625 7.14988C20.7708 7.39988 20.625 7.62488 20.425 7.82488L7.825 20.4249C7.64167 20.6082 7.42917 20.7499 7.1875 20.8499C6.94583 20.9499 6.69167 20.9999 6.425 20.9999H4Z"
                   fill="currentColor"
@@ -69,7 +69,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
             <div className="py-3 border-b-[1.5px] border-black/5 bg-white">
               <div className="flex flex-col items-center gap-2">
                 {/* avatar */}
-                <div className="h-35 w-35 rounded-full bg-slate-300 overflow-hidden">
+                <div className="h-32 w-32 rounded-full bg-slate-300 overflow-hidden">
                   <svg
                     viewBox="0 0 48 48"
                     className="rounded-full w-full h-full bg-[#F7F5F3] border border-[#e0dfde]"
@@ -84,12 +84,12 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
 
                 {/* name + phone */}
                 <div className="min-w-0 flex flex-col items-center">
-                  <div className="text-[23px] font-normal text-slate-900 truncate">
+                  <div className="text-[20px] font-normal text-slate-900 truncate">
                     {data.nombre?.trim() ? data.nombre : "Sin nombre"}
                   </div>
 
                   {/* AQUÍ VA EL TELÉFONO FORMATEADO */}
-                  <div className="text-[15px] text-slate-500 truncate">
+                  <div className="text-[13px] text-slate-500 truncate">
                     +51 {formatTelefonoPE(data.telefono)}
                   </div>
 
@@ -103,7 +103,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                       border border-[#e0dfde]
                       bg-white
                       text-[#111b21]
-                      text-[13px]
+                      text-[12px]
                       font-medium
                       hover:bg-black/5
                       active:bg-black/10
@@ -114,8 +114,8 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     <span className="text-[#00a884]">
                       <svg
                         viewBox="0 0 24 24"
-                        height="18"
-                        width="18"
+                        height="16"
+                        width="16"
                         preserveAspectRatio="xMidYMid meet"
                         fill="none"
                       >
@@ -132,7 +132,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
 
 
                 </div>
-                <div className="block w-full text-[12px] my-3">
+                <div className="block w-full text-[11px] my-3">
                   Info.
                 </div>
 
@@ -150,8 +150,8 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                   <span className="text-[#54656f] shrink-0">
                     <svg
                       viewBox="0 0 24 24"
-                      height="20"
-                      width="20"
+                      height="18"
+                      width="18"
                       preserveAspectRatio="xMidYMid meet"
                       fill="none"
                     >
@@ -162,13 +162,13 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     </svg>
                   </span>
 
-                  <span className="text-[13px] text-[#111b21] truncate">
+                  <span className="text-[12px] text-[#111b21] truncate">
                     Archivos, enlaces y documentos
                   </span>
                 </div>
 
                 {/* Right: count */}
-                <span className="text-[12px] text-[#667781]">
+                <span className="text-[11px] text-[#667781]">
                   0
                 </span>
               </button>
@@ -184,7 +184,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 <div className="flex items-center gap-3 min-w-0">
                   <span className="text-[#54656f] shrink-0">
                     {/* star-refreshed */}
-                    <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                    <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
@@ -194,13 +194,13 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     </svg>
                   </span>
 
-                  <span className="text-[13px] text-[#111b21] truncate">
+                  <span className="text-[12px] text-[#111b21] truncate">
                     Mensajes destacados
                   </span>
                 </div>
 
                 {/* En WhatsApp suele ir vacío (o un número si quieres) */}
-                <span className="text-[12px] text-[#667781]"> </span>
+                <span className="text-[11px] text-[#667781]"> </span>
               </button>
 
               {/* Silenciar notificaciones (con switch) */}
@@ -208,7 +208,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 <div className="flex items-center gap-3 min-w-0">
                   <span className="text-[#54656f] shrink-0">
                     {/* unmute-notifications-refreshed */}
-                    <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                    <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                       <path
                         d="M5 19C4.44772 19 4 18.5523 4 18C4 17.4477 4.44772 17 5 17H6V10C6 8.61667 6.41667 7.3875 7.25 6.3125C8.08333 5.2375 9.16667 4.53333 10.5 4.2V3.5C10.5 3.08333 10.6458 2.72917 10.9375 2.4375C11.2292 2.14583 11.5833 2 12 2C12.4167 2 12.7708 2.14583 13.0625 2.4375C13.3542 2.72917 13.5 3.08333 13.5 3.5V4.2C14.8333 4.53333 15.9167 5.2375 16.75 6.3125C17.5833 7.3875 18 8.61667 18 10V17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5ZM12 22C11.45 22 10.9792 21.8042 10.5875 21.4125C10.1958 21.0208 10 20.55 10 20H14C14 20.55 13.8042 21.0208 13.4125 21.4125C13.0208 21.8042 12.55 22 12 22ZM8 17H16V10C16 8.9 15.6083 7.95833 14.825 7.175C14.0417 6.39167 13.1 6 12 6C10.9 6 9.95833 6.39167 9.175 7.175C8.39167 7.95833 8 8.9 8 10V17Z"
                         fill="currentColor"
@@ -216,7 +216,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     </svg>
                   </span>
 
-                  <span className="text-[13px] text-[#111b21] truncate">
+                  <span className="text-[12px] text-[#111b21] truncate">
                     Silenciar notificaciones
                   </span>
                 </div>
@@ -239,7 +239,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 <div className="flex items-start gap-3 min-w-0">
                   <span className="text-[#54656f] shrink-0 mt-[2px]">
                     {/* disappearing-messages-refreshed */}
-                    <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                    <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                       <path
                         d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.0547 22 12.1094 21.9996 12.1639 21.9987C12.7775 21.9888 13.2669 21.4834 13.257 20.8698C13.2471 20.2563 12.7417 19.7669 12.1281 19.7767C12.0855 19.7774 12.0428 19.7778 12 19.7778C7.70445 19.7778 4.22222 16.2955 4.22222 12C4.22222 7.70445 7.70445 4.22222 12 4.22222C12.0428 4.22222 12.0855 4.22257 12.1281 4.22325C12.7417 4.23314 13.2471 3.74375 13.257 3.13018C13.2669 2.51661 12.7775 2.0112 12.1639 2.00132C12.1094 2.00044 12.0547 2 12 2Z"
                         fill="currentColor"
@@ -272,10 +272,10 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                   </span>
 
                   <div className="min-w-0">
-                    <div className="text-[13px] text-[#111b21] truncate">
+                    <div className="text-[12px] text-[#111b21] truncate">
                       Mensajes temporales
                     </div>
-                    <div className="text-[12px] text-[#667781] truncate">
+                    <div className="text-[11px] text-[#667781] truncate">
                       Desactivados
                     </div>
                   </div>
@@ -290,7 +290,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 <div className="flex items-start gap-3 min-w-0">
                   <span className="text-[#54656f] shrink-0 mt-[2px]">
                     {/* shield */}
-                    <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                    <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                       <path
                         opacity="0.9"
                         d="M12 19.9C13.6167 19.4 14.9667 18.4125 16.05 16.9375C17.1333 15.4625 17.7667 13.8167 17.95 12H12V4.12502L6 6.37502V11.55C6 11.6667 6.01667 11.8167 6.05 12H12V19.9ZM12 21.9C11.8833 21.9 11.775 21.8917 11.675 21.875C11.575 21.8584 11.475 21.8334 11.375 21.8C9.125 21.05 7.33333 19.6625 6 17.6375C4.66667 15.6125 4 13.4334 4 11.1V6.37502C4 5.95836 4.12083 5.58336 4.3625 5.25002C4.60417 4.91669 4.91667 4.67502 5.3 4.52502L11.3 2.27502C11.5333 2.19169 11.7667 2.15002 12 2.15002C12.2333 2.15002 12.4667 2.19169 12.7 2.27502L18.7 4.52502C19.0833 4.67502 19.3958 4.91669 19.6375 5.25002C19.8792 5.58336 20 5.95836 20 6.37502V11.1C20 13.4334 19.3333 15.6125 18 17.6375C16.6667 19.6625 14.875 21.05 12.625 21.8C12.525 21.8334 12.425 21.8584 12.325 21.875C12.225 21.8917 12.1167 21.9 12 21.9Z"
@@ -300,10 +300,10 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                   </span>
 
                   <div className="min-w-0">
-                    <div className="text-[13px] text-[#111b21] truncate">
+                    <div className="text-[12px] text-[#111b21] truncate">
                       Privacidad avanzada del chat
                     </div>
-                    <div className="text-[12px] text-[#667781] truncate">
+                    <div className="text-[11px] text-[#667781] truncate">
                       Desactivado
                     </div>
                   </div>
@@ -314,7 +314,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               <div className="w-full px-4 py-3 flex items-start gap-3">
                 <span className="text-[#54656f] shrink-0 mt-[2px]">
                   {/* lock-refreshed */}
-                  <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                  <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                     <path
                       d="M6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V10C4 9.45 4.19583 8.97917 4.5875 8.5875C4.97917 8.19583 5.45 8 6 8H7V6C7 4.61667 7.4875 3.4375 8.4625 2.4625C9.4375 1.4875 10.6167 1 12 1C13.3833 1 14.5625 1.4875 15.5375 2.4625C16.5125 3.4375 17 4.61667 17 6V8H18C18.55 8 19.0208 8.19583 19.4125 8.5875C19.8042 8.97917 20 9.45 20 10V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM6 20H18V10H6V20ZM12 17C12.55 17 13.0208 16.8042 13.4125 16.4125C13.8042 16.0208 14 15.55 14 15C14 14.45 13.8042 13.9792 13.4125 13.5875C13.0208 13.1958 12.55 13 12 13C11.45 13 10.9792 13.1958 10.5875 13.5875C10.1958 13.9792 10 14.45 10 15C10 15.55 10.1958 16.0208 10.5875 16.4125C10.9792 16.8042 11.45 17 12 17ZM9 8H15V6C15 5.16667 14.7083 4.45833 14.125 3.875C13.5417 3.29167 12.8333 3 12 3C11.1667 3 10.4583 3.29167 9.875 3.875C9.29167 4.45833 9 5.16667 9 6V8Z"
                       fill="currentColor"
@@ -323,8 +323,8 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                 </span>
 
                 <div className="min-w-0">
-                  <div className="text-[13px] text-[#111b21]">Cifrado</div>
-                  <div className="text-[12px] text-[#667781] leading-snug">
+                  <div className="text-[12px] text-[#111b21]">Cifrado</div>
+                  <div className="text-[11px] text-[#667781] leading-snug">
                     Los mensajes están cifrados de extremo a extremo. Haz clic para verificarlo.
                   </div>
                 </div>
@@ -340,7 +340,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               >
                 <span className="text-[#54656f] shrink-0">
                   {/* favorite-refreshed */}
-                  <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                  <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
@@ -349,7 +349,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#111b21]">Añadir a Favoritos</span>
+                <span className="text-[12px] text-[#111b21]">Añadir a Favoritos</span>
               </button>
 
               {/* Bloquear */}
@@ -359,14 +359,14 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               >
                 <span className="text-[#e1193e] shrink-0">
                   {/* block-refreshed */}
-                  <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                  <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                     <path
                       d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C12.9 20 13.7667 19.8542 14.6 19.5625C15.4333 19.2708 16.2 18.85 16.9 18.3L5.7 7.1C5.15 7.8 4.72917 8.56667 4.4375 9.4C4.14583 10.2333 4 11.1 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20ZM18.3 16.9C18.85 16.2 19.2708 15.4333 19.5625 14.6C19.8542 13.7667 20 12.9 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C11.1 4 10.2333 4.14583 9.4 4.4375C8.56667 4.72917 7.8 5.15 7.1 5.7L18.3 16.9Z"
                       fill="currentColor"
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#e1193e]">
+                <span className="text-[12px] text-[#e1193e]">
                   {`Bloquear a ${
                     data.nombre?.trim() ? data.nombre.trim() : "Sin nombre"
                   }`}
@@ -380,14 +380,14 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               >
                 <span className="text-[#e1193e] shrink-0">
                   {/* report-refreshed */}
-                  <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                  <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                     <path
                       d="M3 16C2.46667 16 2 15.8 1.6 15.4C1.2 15 1 14.5333 1 14V12C1 11.8833 1.01667 11.7583 1.05 11.625C1.08333 11.4917 1.11667 11.3667 1.15 11.25L4.15 4.2C4.3 3.86667 4.55 3.58333 4.9 3.35C5.25 3.11667 5.61667 3 6 3H17V16L11 21.95C10.75 22.2 10.4542 22.3458 10.1125 22.3875C9.77083 22.4292 9.44167 22.3667 9.125 22.2C8.80833 22.0333 8.575 21.8 8.425 21.5C8.275 21.2 8.24167 20.8917 8.325 20.575L9.45 16H3ZM15 15.15V5H6L3 12V14H12L10.65 19.5L15 15.15ZM20 3C20.55 3 21.0208 3.19583 21.4125 3.5875C21.8042 3.97917 22 4.45 22 5V14C22 14.55 21.8042 15.0208 21.4125 15.4125C21.0208 15.8042 20.55 16 20 16H17V14H20V5H17V3H20Z"
                       fill="currentColor"
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#e1193e]">
+                <span className="text-[12px] text-[#e1193e]">
                   {`Reportar a ${
                     data.nombre?.trim() ? data.nombre.trim() : "Sin nombre"
                   }`}
@@ -401,14 +401,14 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
               >
                 <span className="text-[#e1193e] shrink-0">
                   {/* delete-refreshed */}
-                  <svg viewBox="0 0 24 24" height="20" width="20" fill="none">
+                  <svg viewBox="0 0 24 24" height="18" width="18" fill="none">
                     <path
                       d="M7 21C6.45 21 5.97917 20.8042 5.5875 20.4125C5.19583 20.0208 5 19.55 5 19V6C4.44772 6 4 5.55228 4 5C4 4.44772 4.44772 4 5 4H9V3.5C9 3.22386 9.22386 3 9.5 3H14.5C14.7761 3 15 3.22386 15 3.5V4H19C19.5523 4 20 4.44772 20 5C20 5.55228 19.5523 6 19 6V19C19 19.55 18.8042 20.0208 18.4125 20.4125C18.0208 20.8042 17.55 21 17 21H7ZM17 6H7V19H17V6ZM9 16.5C9 16.7761 9.22386 17 9.5 17H10.5C10.7761 17 11 16.7761 11 16.5V8.5C11 8.22386 10.7761 8 10.5 8H9.5C9.22386 8 9 8.22386 9 8.5V16.5ZM13 16.5C13 16.7761 13.2239 17 13.5 17H14.5C14.7761 17 15 16.7761 15 16.5V8.5C15 8.22386 14.7761 8 14.5 8H13.5C13.2239 8 13 8.22386 13 8.5V16.5Z"
                       fill="currentColor"
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#e1193e]">Eliminar chat</span>
+                <span className="text-[12px] text-[#e1193e]">Eliminar chat</span>
               </button>
             </div>
           </div>
