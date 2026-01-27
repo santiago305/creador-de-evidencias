@@ -3,6 +3,7 @@ import type { ChangeEvent } from "react";
 export type ActiveDesign = "whatsapp" | "llamada" | "sms";
 
 export interface FormState {
+  nombreAsesor: string;
   dni: string;
   telefono: string;
   nombre: string;

@@ -22,6 +22,7 @@ export function PreviewBlock({ title, badge, data }: PreviewBlockProps) {
       {/* content */}
       <div className="p-4 space-y-3">
         <div className="grid grid-cols-1 gap-2">
+          <Row k="Nombre de asesor" v={data.nombreAsesor} />
           <Row k="DNI" v={data.dni} />
           <Row k="Telefono" v={data.telefono} />
           <Row k="Nombre" v={data.nombre} />

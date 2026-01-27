@@ -9,6 +9,7 @@ import type { ActiveDesign, FormState, SavedData } from "./types";
 export default function App() {
   const [activeDesign, setActiveDesign] = useState<ActiveDesign>("whatsapp");
   const [form, setForm] = useState<FormState>({
+    nombreAsesor: "",
     dni: "",
     telefono: "",
     nombre: "",

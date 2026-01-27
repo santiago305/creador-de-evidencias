@@ -220,7 +220,7 @@ export function Bubble({
 
         <div
           className={[
-            "relative z-[200]",
+            "relative z-200",
             "rounded-[7.5px]",
             cornerCut,
             bubbleBg,

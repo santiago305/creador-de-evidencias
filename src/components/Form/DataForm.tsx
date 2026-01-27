@@ -33,6 +33,12 @@ export function DataForm({
 
         <div className="grid grid-cols-1 gap-3">
           <Input
+            label="Nombre de asesor"
+            value={form.nombreAsesor}
+            onChange={onChange("nombreAsesor")}
+            placeholder="Ej: Ana Lopez"
+          />
+          <Input
             label="DNI"
             value={form.dni}
             onChange={onChange("dni")}
