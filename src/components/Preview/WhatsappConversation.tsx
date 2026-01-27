@@ -196,18 +196,30 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
 
     const status: MsgStatus = rng() < 0.7 ? "read" : "delivered";
 
-    return [
+    const replyLines = normalizeReply(pick(respuestasCliente, rng));
+    const replyMessages = replyLines.map((line, idx) => {
+      const time = new Date(t2);
+      time.setMinutes(time.getMinutes() + idx);
+      return {
+        side: "in" as const,
+        time: formatTimeShort(time),
+        lines: [line],
+      };
+    });
+
+    const baseMessages: {
+      side: "in" | "out";
+      time: string;
+      lines: string[];
+      status?: MsgStatus;
+    }[] = [
       {
         side: "out" as const,
         time: formatTimeShort(t1),
         status,
         lines: firstMessageLines,
       },
-      {
-        side: "in" as const,
-        time: formatTimeShort(t2),
-        lines: normalizeReply(pick(respuestasCliente, rng)),
-      },
+      ...replyMessages,
       {
         side: "out" as const,
         time: formatTimeShort(t3),
@@ -221,6 +233,8 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
         lines: detalleBase,
       },
     ];
+
+    return baseMessages;
   }, [data]);
 
   return (
