@@ -1,6 +1,6 @@
 export function WhatsappInputBar() {
   return (
-    <div className="px-3 pb-2">
+    <div className="px-6 pb-2">
       <div className="flex items-center">
         <div className="flex-1 rounded-full bg-white border border-black/5 px-2 py-2 text-[12px] text-slate-400 flex justify-center items-center">
           <div className="h-full w-auto mr-2.5">

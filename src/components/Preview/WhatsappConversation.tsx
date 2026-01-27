@@ -236,17 +236,30 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
               
               {messages.map((msg, idx) => {
                 const prev = messages[idx - 1];
-                const firstInGroup = !prev || prev.side !== msg.side;
+                const isFirst = !prev || prev.side !== msg.side;
+                const groupKey = `${msg.side}-${idx}`;
+
+                if (!isFirst) return null;
+
+                const group = [msg];
+                for (let i = idx + 1; i < messages.length; i += 1) {
+                  if (messages[i].side !== msg.side) break;
+                  group.push(messages[i]);
+                }
+
                 return (
-                  <MessageGroup key={`${idx}-${msg.time}-${msg.side}`}>
-                    <Bubble
-                      side={msg.side}
-                      firstInGroup={firstInGroup}
-                      time={msg.time}
-                      status={msg.status}
-                    >
-                      {linesToSpans(msg.lines)}
-                    </Bubble>
+                  <MessageGroup key={groupKey}>
+                    {group.map((item, itemIdx) => (
+                      <Bubble
+                        key={`${groupKey}-${itemIdx}`}
+                        side={item.side}
+                        firstInGroup={itemIdx === 0}
+                        time={item.time}
+                        status={item.status}
+                      >
+                        {linesToSpans(item.lines)}
+                      </Bubble>
+                    ))}
                   </MessageGroup>
                 );
               })}

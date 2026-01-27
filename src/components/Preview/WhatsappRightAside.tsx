@@ -366,7 +366,11 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#e1193e]">Bloquear a Marely</span>
+                <span className="text-[13px] text-[#e1193e]">
+                  {`Bloquear a ${
+                    data.nombre?.trim() ? data.nombre.trim() : "Sin nombre"
+                  }`}
+                </span>
               </button>
 
               {/* Reportar */}
@@ -383,7 +387,11 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
                     />
                   </svg>
                 </span>
-                <span className="text-[13px] text-[#e1193e]">Reportar a Marely</span>
+                <span className="text-[13px] text-[#e1193e]">
+                  {`Reportar a ${
+                    data.nombre?.trim() ? data.nombre.trim() : "Sin nombre"
+                  }`}
+                </span>
               </button>
 
               {/* Eliminar chat */}
