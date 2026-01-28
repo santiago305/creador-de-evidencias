@@ -13,7 +13,7 @@ export function MessageGroup({
 export function DayChip({ text }: { text: string }) {
   return (
     <div className="flex justify-center my-4">
-      <span className="rounded-md bg-[#fefdfc] px-3 py-0.75 text-[11px] text-[#667781] shadow font-medium">
+      <span className="rounded-md bg-[#fefdfc] px-2 py-0.5 text-[10px] text-[#667781] shadow font-medium">
         {text}
       </span>
     </div>
