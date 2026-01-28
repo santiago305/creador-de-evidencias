@@ -6,6 +6,7 @@ import respuestasClienteData from "../../data/respuestasCliente.json";
 import respuestasContinuacionAsesorData from "../../data/respuestasContinuacionAsesor.json";
 import {
   MessageGroup,
+  EncryptedMessage,
   DayChip,
   Bubble,
   type MsgStatus,
@@ -247,18 +248,37 @@ export function WhatsappConversation({
       ),
     ];
 
-    const t1 = new Date(baseDate);
-    const t2 = new Date(baseDate);
-    t2.setMinutes(t2.getMinutes() + (1 + Math.floor(rng() * 4)));
-    const t3 = new Date(t2);
-    t3.setMinutes(t3.getMinutes() + (1 + Math.floor(rng() * 3)));
-    const t4 = new Date(t3);
-    t4.setMinutes(t4.getMinutes() + (1 + Math.floor(rng() * 3)));
-
     const statusForMessages: MsgStatus =
       messageStatus ?? (rng() < 0.7 ? "read" : "delivered");
 
     const replyLines = normalizeReply(pick(respuestasCliente, rng));
+    const replySpan = Math.max(replyLines.length - 1, 0);
+
+    const minTotal = replySpan + 3;
+    const minAllowed = Math.max(4, minTotal);
+    const maxAllowed = 7;
+    const totalMinutes =
+      minAllowed <= maxAllowed
+        ? minAllowed + Math.floor(rng() * (maxAllowed - minAllowed + 1))
+        : 7;
+    const gapMin = minTotal <= totalMinutes ? 1 : 0;
+    const remaining = Math.max(0, totalMinutes - replySpan - gapMin * 3);
+
+    const extra1 = Math.floor(rng() * (remaining + 1));
+    const extra2 = Math.floor(rng() * (remaining - extra1 + 1));
+    const extra3 = remaining - extra1 - extra2;
+
+    const gap1 = gapMin + extra1;
+    const gap2 = gapMin + extra2;
+    const gap3 = gapMin + extra3;
+
+    const t1 = new Date(baseDate);
+    const t2 = new Date(baseDate);
+    t2.setMinutes(t2.getMinutes() + gap1);
+    const t3 = new Date(t2);
+    t3.setMinutes(t3.getMinutes() + replySpan + gap2);
+    const t4 = new Date(t3);
+    t4.setMinutes(t4.getMinutes() + gap3);
     const replyMessages = replyLines.map((line, idx) => {
       const time = new Date(t2);
       time.setMinutes(time.getMinutes() + idx);
@@ -313,7 +333,8 @@ export function WhatsappConversation({
           <div className="flex-1 w-full h-full ">
             <div className="w-full h-full">
               <DayChip text={getDayChipText(data.fechaHora)} />
-              
+              <EncryptedMessage />
+            
               {messages.map((msg, idx) => {
                 const prev = messages[idx - 1];
                 const isFirst = !prev || prev.side !== msg.side;
