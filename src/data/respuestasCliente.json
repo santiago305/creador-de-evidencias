@@ -1,201 +1,3273 @@
 [
-  ["Hola, si por favor enviame la propuesta"],
-  ["De acuerdo, puede enviarla por aqui"],
-  ["Buenas, si me la puede compartir por este medio"],
-  ["Ok, espero la propuesta gracias"],
-  ["Hola, por favor me la envias por aqui"],
-  ["Si, adelante con la propuesta"],
-  ["Listo, quedo pendiente de la propuesta"],
-  ["Dale, puedes enviarmela por este medio"],
-  ["Perfecto, enviame la propuesta"],
-  ["Ok, si puedes enviarla ahora"],
-  ["Gracias, si me la compartes por aqui"],
-  ["Si, por favor"],
-  ["Claro, enviame la propuesta por aqui"],
-  ["Hola, si me puedes pasar la propuesta"],
-  ["Si, quedo a la espera"],
-  ["Dale, quedo atento"],
-  ["Ok, envia nomas"],
-  ["Si, por este medio esta bien"],
-  ["Correcto, enviame la propuesta"],
-  ["Listo, espero la info"],
-  ["Ok, lo reviso ni bien lo envies"],
-  ["Si, me la puedes mandar"],
-  ["Perfecto, gracias"],
-  ["Si, esta bien"],
-  ["Quedo atento, gracias"],
-  ["Hola, si, enviame por favor"],
-  ["Si, por favor enviame la propuesta"],
-  ["Gracias, puedes mandarla ahora"],
-  ["Si, quedo atento a la propuesta"],
-  ["Ok, la espero"],
-  ["Si, enviame la propuesta cuando puedas"],
-  ["De acuerdo, me la pasas por aqui"],
-  ["Hola, quedo atento a la propuesta"],
-  ["Si, gracias, espero la propuesta"],
-  ["Ok, me interesa, enviame los detalles"],
-  ["Si, mandame los detalles por aqui"],
-  ["Ok, gracias, la reviso"],
-  ["Listo, la espero"],
-  ["Hola, enviame la propuesta por favor"],
-  ["Gracias, si me la compartes ahora"],
-  ["Ok, por aqui esta bien"],
-  ["Si, por aqui nomas"],
-  ["Si, sin problema, enviame"],
-  ["Si, quedo atento, gracias"],
-  ["Ok, me la envias"],
-  ["Dale, enviame la propuesta gracias"],
-  ["Listo, me la compartes"],
-  ["Ok, quedo atento a tu mensaje"],
-  ["Si, envia por favor"],
-  ["Hola, si, quedo atento"],
-  ["Gracias, si puedes enviarla por aqui"],
-  ["Ok, me la mandas por este medio"],
-  ["Si, gracias, espero la propuesta por aqui"],
-  ["Perfecto, por aqui esta bien"],
-  ["Hola, si, me la puedes mandar"],
-  ["Si, por favor, quedo atento"],
-  ["Ok, si puedes enviarla"],
-  ["Hola, si, enviame la propuesta por este medio"],
-  ["Ok, si, enviame la propuesta"],
-  ["Si, por favor enviame por aqui"],
-  ["Dale, por aqui"],
-  ["Si, claro, enviame la propuesta"],
-  ["Hola, si, por aqui nomas"],
-  ["Ok, espero tu mensaje"],
-  ["Si, enviamela por favor"],
-  ["Ok, me la compartes por aqui"],
-  ["Si, mandame la propuesta por aqui"],
-  ["Ok, por favor"],
-  ["Si, gracias"],
-  ["Listo, gracias"],
-  ["Si, adelante"],
-  ["Ok, ok"],
-  ["Si, por favor gracias"],
-  ["Claro, gracias"],
-  ["Ok, si, gracias"],
-  ["Dale, gracias"],
-  ["Si, ok"],
-  ["Ok, dale"],
-  ["Ok, de acuerdo"],
-  ["Si, de acuerdo"],
-  ["Si, queda bien por aqui"],
-  ["Ok, enviame por este medio"],
-  ["Si, por aqui esta perfecto"],
-  ["Ok, te leo por aqui"],
-  ["Ok, espero la propuesta por aqui"],
-  ["Si, envia aqui por favor"],
-  ["Ok, si puedes enviar por aqui"],
-  ["Dale, si puedes enviar por aqui"],
-  ["Si, en un rato la reviso"],
-  ["Ok, la reviso y te aviso"],
-  ["Si, cuando la envies la reviso"],
-  ["Ok, la leo y te aviso"],
-  ["Gracias, la reviso ni bien llegue"],
-  ["Ok, la reviso ni bien la envies"],
-  ["Si, la reviso en cuanto la reciba"],
-  ["Perfecto, la reviso apenas llegue"],
-  ["Gracias, la reviso y te confirmo"],
-  ["Ok, la reviso y te escribo"],
-  ["Hola, me la envias por favor"],
-  ["Si, por favor enviala"],
-  ["Ok, por favor enviala"],
-  ["Si, por favor enviamela"],
-  ["Ok, enviamela por favor"],
-  ["Listo, enviamela por aqui"],
-  ["Ok, enviamela"],
-  ["Si, enviamela"],
-  ["Ok, dale, enviamela"],
-  ["Si, porfa enviamela"],
-  ["Hola, si, enviamela por favor"],
-  ["Ok, gracias, enviamela"],
-  ["Dale, enviamela por aqui"],
-  ["Ok, porfa enviamela"],
-  ["Si, espero el detalle"],
-  ["Ok, espero los detalles"],
-  ["Si, espero la info completa"],
-  ["Ok, espero la info completa"],
-  ["Si, espero la propuesta completa"],
-  ["Ok, espero la propuesta completa"],
-  ["Ok, espero el resumen"],
-  ["Si, espero el resumen"],
-  ["Ok, espero el detalle por aqui"],
-  ["Si, espero el detalle por aqui"],
-  ["Si, te leo por aqui"],
-  ["Ok, te leo por aqui"],
-  ["Ok, seguimos por aqui"],
-  ["Si, seguimos por aqui"],
-  ["Ok, gracias, quedo pendiente"],
-  ["Si, gracias, quedo pendiente"],
-  ["Ok, quedo pendiente"],
-  ["Si, quedo pendiente"],
-  ["Ok, gracias, estare esperando la propuesta, reviso apenas me la envies"],
-  ["Gracias, por aqui esta bien, la reviso ni bien me llegue"],
-  ["Si, por favor mandame la propuesta completa con monto, plazo y cuota"],
-  ["Ok, enviame el detalle por aqui y lo reviso con calma"],
-  ["Gracias, espero la propuesta y te confirmo apenas la vea"],
-  ["Si, enviame la propuesta y el resumen por favor"],
-  ["Si, espero la propuesta, si puedes incluir los detalles mejor"],
-  ["Ok, la espero por aqui y te aviso ni bien la revise"],
-  ["Gracias, por favor enviame la propuesta por este medio"],
-  ["Ok, lo espero por aqui"],
-  ["Si, lo espero por aqui"],
-  ["Ok, quedo a la espera, gracias"],
-  ["Si, quedo a la espera, gracias"],
-  ["Ok, quedo a la espera"],
-  ["Si, quedo a la espera"],
-  ["Hola, gracias, quedo a la espera"],
-  ["Ok, gracias, quedo a la espera"],
-  ["Si, gracias, quedo a la espera"],
-  ["Ok, gracias por el aviso"],
-  ["Si, gracias por el aviso"],
-  ["Ok, espero tu mensaje"],
-  ["Si, espero tu mensaje"],
-  ["Ok, espero tu respuesta"],
-  ["Si, espero tu respuesta"],
-  ["Ok, espero tu confirmacion"],
-  ["Si, espero tu confirmacion"],
-  ["Ok, gracias, espero tu mensaje"],
-  ["Si, gracias, espero tu mensaje"],
-  ["Ok, gracias, espero tu respuesta"],
-  ["Si, gracias, espero tu respuesta"],
-  ["Ok, gracias, espero tu confirmacion"],
-  ["Si, gracias, espero tu confirmacion"],
-  ["Ok, {asesor}, enviame la propuesta"],
-  ["Ok {asesor}, espero la propuesta"],
-  ["Si {asesor}, por favor enviame la propuesta"],
-  ["Dale {asesor}, enviame la propuesta"],
-  ["Perfecto {asesor}, espero tu mensaje"],
-  ["Ok {asesor}, enviame por aqui"],
-  ["Si {asesor}, por aqui esta bien"],
-  ["Gracias {asesor}, envia por aqui"],
-  ["Ok {asesor}, quedo pendiente"],
-  ["Si {asesor}, quedo pendiente"],
-  ["Hola"],
-  ["Hola", "Si, enviame la propuesta por favor"],
-  ["Buenas", "Si, por aqui esta bien"],
-  ["Hola", "Si, gracias"],
-  ["Hola", "Si, enviame la propuesta"],
-  ["Ok", "Por favor enviame la propuesta"],
-  ["Ok", "Si, enviame por aqui"],
-  ["Si", "Enviame la propuesta por favor"],
-  ["Si", "Por aqui esta bien"],
-  ["Hola", "Enviame por este medio por favor"],
-  ["Hola", "Si, me la puedes mandar por aqui"],
-  ["Buenas", "Si, enviame la propuesta"],
-  ["Hola", "Ok, enviame la propuesta"],
-  ["Ok", "Si, la espero por aqui"],
-  ["Si", "Espero la propuesta por aqui"],
-  ["Hola", "Por favor enviame la propuesta"],
-  ["Gracias", "Espero la propuesta"],
-  ["Ok", "La espero por aqui"],
-  ["Si", "La espero por aqui"],
-  ["Ok", "Gracias"],
-  ["Si", "Gracias"],
-  ["Ok", "Listo"],
-  ["Si", "Listo"],
-  ["Ok", "Dale"],
-  ["Si", "Dale"],
-  ["Ok", "De acuerdo"],
-  ["Si", "De acuerdo"]
+  [
+    "Hola, si por favor enviame la propuesta"
+  ],
+  [
+    "De acuerdo, puede enviarla por aqui"
+  ],
+  [
+    "Buenas, si me la puede compartir por este medio"
+  ],
+  [
+    "Buenos dias, por favor enviame la propuesta por aqui"
+  ],
+  [
+    "Buenos dias, si puedes enviarla por este medio esta bien"
+  ],
+  [
+    "Buenos dias, quedo atento a la propuesta, gracias"
+  ],
+  [
+    "Buenas tardes, por favor enviame la propuesta por aqui"
+  ],
+  [
+    "Buenas tardes, si puedes enviarla por este medio esta bien"
+  ],
+  [
+    "Buenas tardes, quedo atento a la propuesta, gracias"
+  ],
+  [
+    "Buenas noches, por favor enviame la propuesta por aqui"
+  ],
+  [
+    "Buenas noches, si puedes enviarla por este medio esta bien"
+  ],
+  [
+    "Buenas noches, quedo atento a la propuesta, gracias"
+  ],
+  [
+    "Hola, buen dia, enviame la propuesta cuando puedas"
+  ],
+  [
+    "Hola, buena tarde, enviame la propuesta cuando puedas"
+  ],
+  [
+    "Hola, buena noche, enviame la propuesta cuando puedas"
+  ],
+  [
+    "Ok, por favor enviame la propuesta completa con detalles y condiciones"
+  ],
+  [
+    "Ok, enviala por aqui y la reviso con calma cuando me llegue"
+  ],
+  [
+    "Listo, quedo a la espera de la propuesta y te confirmo apenas la revise"
+  ],
+  [
+    "Gracias, enviame la propuesta por este medio y la reviso apenas pueda"
+  ],
+  [
+    "Perfecto, enviame la propuesta con el detalle y lo reviso apenas la reciba"
+  ],
+  [
+    "Ok, espero la propuesta gracias"
+  ],
+  [
+    "Hola, por favor me la envias por aqui"
+  ],
+  [
+    "Si, adelante con la propuesta"
+  ],
+  [
+    "Listo, quedo pendiente de la propuesta"
+  ],
+  [
+    "Dale, puedes enviarmela por este medio"
+  ],
+  [
+    "Perfecto, enviame la propuesta"
+  ],
+  [
+    "Ok, si puedes enviarla ahora"
+  ],
+  [
+    "Gracias, si me la compartes por aqui"
+  ],
+  [
+    "Si, por favor"
+  ],
+  [
+    "Claro, enviame la propuesta por aqui"
+  ],
+  [
+    "Hola, si me puedes pasar la propuesta"
+  ],
+  [
+    "Si, quedo a la espera"
+  ],
+  [
+    "Dale, quedo atento"
+  ],
+  [
+    "Ok, envia nomas"
+  ],
+  [
+    "Si, por este medio esta bien"
+  ],
+  [
+    "Correcto, enviame la propuesta"
+  ],
+  [
+    "Listo, espero la info"
+  ],
+  [
+    "Ok, lo reviso ni bien lo envies"
+  ],
+  [
+    "Si, me la puedes mandar"
+  ],
+  [
+    "Perfecto, gracias"
+  ],
+  [
+    "Si, esta bien"
+  ],
+  [
+    "Quedo atento, gracias"
+  ],
+  [
+    "Hola, si, enviame por favor"
+  ],
+  [
+    "Si, por favor enviame la propuesta"
+  ],
+  [
+    "Gracias, puedes mandarla ahora"
+  ],
+  [
+    "Si, quedo atento a la propuesta"
+  ],
+  [
+    "Ok, la espero"
+  ],
+  [
+    "Si, enviame la propuesta cuando puedas"
+  ],
+  [
+    "De acuerdo, me la pasas por aqui"
+  ],
+  [
+    "Hola, quedo atento a la propuesta"
+  ],
+  [
+    "Si, gracias, espero la propuesta"
+  ],
+  [
+    "Ok, me interesa, enviame los detalles"
+  ],
+  [
+    "Si, mandame los detalles por aqui"
+  ],
+  [
+    "Ok, gracias, la reviso"
+  ],
+  [
+    "Listo, la espero"
+  ],
+  [
+    "Hola, enviame la propuesta por favor"
+  ],
+  [
+    "Gracias, si me la compartes ahora"
+  ],
+  [
+    "Ok, por aqui esta bien"
+  ],
+  [
+    "Si, por aqui nomas"
+  ],
+  [
+    "Si, sin problema, enviame"
+  ],
+  [
+    "Si, quedo atento, gracias"
+  ],
+  [
+    "Ok, me la envias"
+  ],
+  [
+    "Dale, enviame la propuesta gracias"
+  ],
+  [
+    "Listo, me la compartes"
+  ],
+  [
+    "Ok, quedo atento a tu mensaje"
+  ],
+  [
+    "Si, envia por favor"
+  ],
+  [
+    "Hola, si, quedo atento"
+  ],
+  [
+    "Gracias, si puedes enviarla por aqui"
+  ],
+  [
+    "Ok, me la mandas por este medio"
+  ],
+  [
+    "Si, gracias, espero la propuesta por aqui"
+  ],
+  [
+    "Perfecto, por aqui esta bien"
+  ],
+  [
+    "Hola, si, me la puedes mandar"
+  ],
+  [
+    "Si, por favor, quedo atento"
+  ],
+  [
+    "Ok, si puedes enviarla"
+  ],
+  [
+    "Hola, si, enviame la propuesta por este medio"
+  ],
+  [
+    "Ok, si, enviame la propuesta"
+  ],
+  [
+    "Si, por favor enviame por aqui"
+  ],
+  [
+    "Dale, por aqui"
+  ],
+  [
+    "Si, claro, enviame la propuesta"
+  ],
+  [
+    "Hola, si, por aqui nomas"
+  ],
+  [
+    "Ok, espero tu mensaje"
+  ],
+  [
+    "Si, enviamela por favor"
+  ],
+  [
+    "Ok, me la compartes por aqui"
+  ],
+  [
+    "Si, mandame la propuesta por aqui"
+  ],
+  [
+    "Ok, por favor"
+  ],
+  [
+    "Si, gracias"
+  ],
+  [
+    "Listo, gracias"
+  ],
+  [
+    "Si, adelante"
+  ],
+  [
+    "Ok, ok"
+  ],
+  [
+    "Si, por favor gracias"
+  ],
+  [
+    "Claro, gracias"
+  ],
+  [
+    "Ok, si, gracias"
+  ],
+  [
+    "Dale, gracias"
+  ],
+  [
+    "Si, ok"
+  ],
+  [
+    "Ok, dale"
+  ],
+  [
+    "Ok, de acuerdo"
+  ],
+  [
+    "Si, de acuerdo"
+  ],
+  [
+    "Si, queda bien por aqui"
+  ],
+  [
+    "Ok, enviame por este medio"
+  ],
+  [
+    "Si, por aqui esta perfecto"
+  ],
+  [
+    "Ok, te leo por aqui"
+  ],
+  [
+    "Ok, espero la propuesta por aqui"
+  ],
+  [
+    "Si, envia aqui por favor"
+  ],
+  [
+    "Ok, si puedes enviar por aqui"
+  ],
+  [
+    "Dale, si puedes enviar por aqui"
+  ],
+  [
+    "Si, en un rato la reviso"
+  ],
+  [
+    "Ok, la reviso y te aviso"
+  ],
+  [
+    "Si, cuando la envies la reviso"
+  ],
+  [
+    "Ok, la leo y te aviso"
+  ],
+  [
+    "Gracias, la reviso ni bien llegue"
+  ],
+  [
+    "Ok, la reviso ni bien la envies"
+  ],
+  [
+    "Si, la reviso en cuanto la reciba"
+  ],
+  [
+    "Perfecto, la reviso apenas llegue"
+  ],
+  [
+    "Gracias, la reviso y te confirmo"
+  ],
+  [
+    "Ok, la reviso y te escribo"
+  ],
+  [
+    "Hola, me la envias por favor"
+  ],
+  [
+    "Si, por favor enviala"
+  ],
+  [
+    "Ok, por favor enviala"
+  ],
+  [
+    "Si, por favor enviamela"
+  ],
+  [
+    "Ok, enviamela por favor"
+  ],
+  [
+    "Listo, enviamela por aqui"
+  ],
+  [
+    "Ok, enviamela"
+  ],
+  [
+    "Si, enviamela"
+  ],
+  [
+    "Ok, dale, enviamela"
+  ],
+  [
+    "Si, porfa enviamela"
+  ],
+  [
+    "Hola, si, enviamela por favor"
+  ],
+  [
+    "Ok, gracias, enviamela"
+  ],
+  [
+    "Dale, enviamela por aqui"
+  ],
+  [
+    "Ok, porfa enviamela"
+  ],
+  [
+    "Si, espero el detalle"
+  ],
+  [
+    "Ok, espero los detalles"
+  ],
+  [
+    "Si, espero la info completa"
+  ],
+  [
+    "Ok, espero la info completa"
+  ],
+  [
+    "Si, espero la propuesta completa"
+  ],
+  [
+    "Ok, espero la propuesta completa"
+  ],
+  [
+    "Ok, espero el resumen"
+  ],
+  [
+    "Si, espero el resumen"
+  ],
+  [
+    "Ok, espero el detalle por aqui"
+  ],
+  [
+    "Si, espero el detalle por aqui"
+  ],
+  [
+    "Si, te leo por aqui"
+  ],
+  [
+    "Ok, seguimos por aqui"
+  ],
+  [
+    "Si, seguimos por aqui"
+  ],
+  [
+    "Ok, gracias, quedo pendiente"
+  ],
+  [
+    "Si, gracias, quedo pendiente"
+  ],
+  [
+    "Ok, quedo pendiente"
+  ],
+  [
+    "Si, quedo pendiente"
+  ],
+  [
+    "Ok, gracias, estare esperando la propuesta, reviso apenas me la envies"
+  ],
+  [
+    "Gracias, por aqui esta bien, la reviso ni bien me llegue"
+  ],
+  [
+    "Si, por favor mandame la propuesta completa con monto, plazo y cuota"
+  ],
+  [
+    "Ok, enviame el detalle por aqui y lo reviso con calma"
+  ],
+  [
+    "Gracias, espero la propuesta y te confirmo apenas la vea"
+  ],
+  [
+    "Si, enviame la propuesta y el resumen por favor"
+  ],
+  [
+    "Si, espero la propuesta, si puedes incluir los detalles mejor"
+  ],
+  [
+    "Ok, la espero por aqui y te aviso ni bien la revise"
+  ],
+  [
+    "Gracias, por favor enviame la propuesta por este medio"
+  ],
+  [
+    "Ok, lo espero por aqui"
+  ],
+  [
+    "Si, lo espero por aqui"
+  ],
+  [
+    "Ok, quedo a la espera, gracias"
+  ],
+  [
+    "Si, quedo a la espera, gracias"
+  ],
+  [
+    "Ok, quedo a la espera"
+  ],
+  [
+    "Hola, gracias, quedo a la espera"
+  ],
+  [
+    "Ok, gracias, quedo a la espera"
+  ],
+  [
+    "Si, gracias, quedo a la espera"
+  ],
+  [
+    "Ok, gracias por el aviso"
+  ],
+  [
+    "Si, gracias por el aviso"
+  ],
+  [
+    "Si, espero tu mensaje"
+  ],
+  [
+    "Ok, espero tu respuesta"
+  ],
+  [
+    "Si, espero tu respuesta"
+  ],
+  [
+    "Ok, espero tu confirmacion"
+  ],
+  [
+    "Si, espero tu confirmacion"
+  ],
+  [
+    "Ok, gracias, espero tu mensaje"
+  ],
+  [
+    "Si, gracias, espero tu mensaje"
+  ],
+  [
+    "Ok, gracias, espero tu respuesta"
+  ],
+  [
+    "Si, gracias, espero tu respuesta"
+  ],
+  [
+    "Ok, gracias, espero tu confirmacion"
+  ],
+  [
+    "Si, gracias, espero tu confirmacion"
+  ],
+  [
+    "Ok, {asesor}, enviame la propuesta"
+  ],
+  [
+    "Ok {asesor}, espero la propuesta"
+  ],
+  [
+    "Si {asesor}, por favor enviame la propuesta"
+  ],
+  [
+    "Dale {asesor}, enviame la propuesta"
+  ],
+  [
+    "Perfecto {asesor}, espero tu mensaje"
+  ],
+  [
+    "Ok {asesor}, enviame por aqui"
+  ],
+  [
+    "Si {asesor}, por aqui esta bien"
+  ],
+  [
+    "Gracias {asesor}, envia por aqui"
+  ],
+  [
+    "Ok {asesor}, quedo pendiente"
+  ],
+  [
+    "Si {asesor}, quedo pendiente"
+  ],
+  [
+    "Hola"
+  ],
+  [
+    "Hola",
+    "Si, enviame la propuesta por favor"
+  ],
+  [
+    "Buenas",
+    "Si, por aqui esta bien"
+  ],
+  [
+    "Hola",
+    "Si, gracias"
+  ],
+  [
+    "Hola",
+    "Si, enviame la propuesta"
+  ],
+  [
+    "Ok",
+    "Por favor enviame la propuesta"
+  ],
+  [
+    "Ok",
+    "Si, enviame por aqui"
+  ],
+  [
+    "Si",
+    "Enviame la propuesta por favor"
+  ],
+  [
+    "Si",
+    "Por aqui esta bien"
+  ],
+  [
+    "Hola",
+    "Enviame por este medio por favor"
+  ],
+  [
+    "Hola",
+    "Si, me la puedes mandar por aqui"
+  ],
+  [
+    "Buenas",
+    "Si, enviame la propuesta"
+  ],
+  [
+    "Hola",
+    "Ok, enviame la propuesta"
+  ],
+  [
+    "Ok",
+    "Si, la espero por aqui"
+  ],
+  [
+    "Si",
+    "Espero la propuesta por aqui"
+  ],
+  [
+    "Hola",
+    "Por favor enviame la propuesta"
+  ],
+  [
+    "Gracias",
+    "Espero la propuesta"
+  ],
+  [
+    "Ok",
+    "La espero por aqui"
+  ],
+  [
+    "Si",
+    "La espero por aqui"
+  ],
+  [
+    "Ok",
+    "Gracias"
+  ],
+  [
+    "Si",
+    "Gracias"
+  ],
+  [
+    "Ok",
+    "Listo"
+  ],
+  [
+    "Si",
+    "Listo"
+  ],
+  [
+    "Ok",
+    "Dale"
+  ],
+  [
+    "Si",
+    "Dale"
+  ],
+  [
+    "Ok",
+    "De acuerdo"
+  ],
+  [
+    "Si",
+    "De acuerdo"
+  ],
+  [
+    "Buen dia, comparteme el detalle de la propuesta por este medio y lo valido."
+  ],
+  [
+    "Buen dia, comparteme la cotizacion por este medio apenas puedas."
+  ],
+  [
+    "Buen dia, comparteme la informacion completa por aqui y lo veo."
+  ],
+  [
+    "Buen dia, comparteme la propuesta con detalles por este canal con lo incluido y lo no incluido."
+  ],
+  [
+    "Buen dia, deja el resumen por este medio y lo reviso apenas llegue."
+  ],
+  [
+    "Buen dia, deja los detalles por este medio y lo reviso apenas llegue."
+  ],
+  [
+    "Buen dia, envia el resumen por este canal y lo valido."
+  ],
+  [
+    "Buen dia, envia la cotizacion por este chat con lo incluido y lo no incluido."
+  ],
+  [
+    "Buen dia, envia la propuesta con condiciones por aqui y tiempos."
+  ],
+  [
+    "Buen dia, envia la propuesta con precios por este chat y lo veo."
+  ],
+  [
+    "Buen dia, envia los detalles por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Buen dia, hazme llegar el detalle de la propuesta por este canal; lo reviso y te aviso."
+  ],
+  [
+    "Buen dia, hazme llegar la propuesta con condiciones por aqui con el cronograma."
+  ],
+  [
+    "Buen dia, hazme llegar la propuesta con condiciones por este canal y la reviso."
+  ],
+  [
+    "Buen dia, hazme llegar la propuesta con precios por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Buen dia, hazme llegar la propuesta por este canal y lo reviso."
+  ],
+  [
+    "Buen dia, mandame la propuesta con condiciones por este medio cuando puedas."
+  ],
+  [
+    "Buen dia, mandame la propuesta con detalles por este medio en el transcurso del dia."
+  ],
+  [
+    "Buen dia, mandame la propuesta con detalles por este medio y lo valido."
+  ],
+  [
+    "Buen dia, mandame la propuesta por aqui y la reviso."
+  ],
+  [
+    "Buen dia, me interesa, hazme llegar los detalles por este canal."
+  ],
+  [
+    "Buen dia, me interesa, pasame la informacion completa por este chat."
+  ],
+  [
+    "Buen dia, me sirve, hazme llegar los detalles por aqui."
+  ],
+  [
+    "Buen dia, me sirve, remiteme la propuesta con condiciones por este medio."
+  ],
+  [
+    "Buen dia, me sirve, remiteme los detalles por este medio."
+  ],
+  [
+    "Buen dia, por favor comparteme la propuesta con detalles por este medio."
+  ],
+  [
+    "Buen dia, por favor envia la propuesta con precios por aqui."
+  ],
+  [
+    "Buen dia, por favor mandame la informacion completa por aqui."
+  ],
+  [
+    "Buen dia, puedes compartirme la propuesta con precios por este chat? Gracias."
+  ],
+  [
+    "Buen dia, puedes enviar la propuesta con condiciones por aqui? Por favor."
+  ],
+  [
+    "Buen dia, puedes enviar la propuesta por aqui? Por favor."
+  ],
+  [
+    "Buen dia, puedes hacerme llegar la informacion completa por este chat? Gracias."
+  ],
+  [
+    "Buen dia, puedes hacerme llegar los detalles por este medio? Por favor."
+  ],
+  [
+    "Buen dia, puedes remitirme la informacion completa por este canal? Por favor."
+  ],
+  [
+    "Buen dia, puedes remitirme la propuesta con condiciones por este medio? Por favor."
+  ],
+  [
+    "Buen dia, quedo pendiente, envia el resumen por este chat."
+  ],
+  [
+    "Buen dia, quedo pendiente, envia la propuesta con precios por este canal."
+  ],
+  [
+    "Buen dia, quedo pendiente, hazme llegar el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buen dia, quedo pendiente, hazme llegar la cotizacion por este chat."
+  ],
+  [
+    "Buen dia, quedo pendiente, remiteme la propuesta con condiciones por este canal."
+  ],
+  [
+    "Buen dia, si, comparteme la informacion completa por este chat y la reviso y te confirmo."
+  ],
+  [
+    "Buen dia, si, envia el resumen por este canal y lo reviso con calma y te aviso."
+  ],
+  [
+    "Buen dia, si, mandame el resumen por este medio y lo reviso con calma y te doy respuesta."
+  ],
+  [
+    "Buen dia, si, remiteme la propuesta con detalles por este medio y lo reviso con calma y te confirmo."
+  ],
+  [
+    "Buenas",
+    "Comparteme los detalles por este medio y lo reviso."
+  ],
+  [
+    "Buenas",
+    "De acuerdo, hazme llegar el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buenas",
+    "De acuerdo, remiteme la propuesta por este canal."
+  ],
+  [
+    "Buenas",
+    "Envia el detalle de la propuesta por este canal y lo reviso."
+  ],
+  [
+    "Buenas",
+    "Envia la cotizacion por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas",
+    "Envia la informacion completa por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas",
+    "Envia la propuesta completa por este medio con pasos y tiempos."
+  ],
+  [
+    "Buenas",
+    "Mandame el detalle de la propuesta por este medio y lo reviso."
+  ],
+  [
+    "Buenas",
+    "Mandame la cotizacion completa por este medio y lo reviso."
+  ],
+  [
+    "Buenas",
+    "Mandame la propuesta completa por este medio con precios y opciones."
+  ],
+  [
+    "Buenas",
+    "Pasame el resumen por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas",
+    "Pasame el resumen por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas",
+    "Pasame la propuesta completa por este chat y lo reviso."
+  ],
+  [
+    "Buenas",
+    "Pasame la propuesta con detalles por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas",
+    "Por favor, comparteme la informacion completa por este chat."
+  ],
+  [
+    "Buenas",
+    "Por favor, comparteme la propuesta con detalles por este chat."
+  ],
+  [
+    "Buenas",
+    "Por favor, envia el detalle de la propuesta por este chat."
+  ],
+  [
+    "Buenas",
+    "Por favor, hazme llegar la informacion por este chat."
+  ],
+  [
+    "Buenas",
+    "Remiteme la informacion completa por este canal con el cronograma."
+  ],
+  [
+    "Buenas",
+    "Remiteme la propuesta completa por este canal y lo reviso."
+  ],
+  [
+    "Buenas",
+    "Si, comparteme el resumen por este medio, gracias."
+  ],
+  [
+    "Buenas",
+    "Si, pasame la informacion por aqui, gracias."
+  ],
+  [
+    "Buenas",
+    "Si, pasame la propuesta por este medio, gracias."
+  ],
+  [
+    "Buenas",
+    "Si, remiteme el resumen por este canal, gracias."
+  ],
+  [
+    "Buenas",
+    "Si, remiteme la propuesta con condiciones por este medio, gracias."
+  ],
+  [
+    "Buenas noches",
+    "Comparteme el detalle de la propuesta por este chat cuando puedas."
+  ],
+  [
+    "Buenas noches",
+    "Comparteme la cotizacion completa por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Comparteme la cotizacion por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Comparteme la propuesta con condiciones por este canal; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Comparteme la propuesta por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "De acuerdo, comparteme la informacion completa por este canal."
+  ],
+  [
+    "Buenas noches",
+    "De acuerdo, comparteme la informacion por aqui."
+  ],
+  [
+    "Buenas noches",
+    "De acuerdo, mandame el resumen por este canal."
+  ],
+  [
+    "Buenas noches",
+    "De acuerdo, remiteme la propuesta con condiciones por este chat."
+  ],
+  [
+    "Buenas noches",
+    "Envia la cotizacion completa por este medio y lo reviso."
+  ],
+  [
+    "Buenas noches",
+    "Hazme llegar el detalle de la propuesta por aqui con condiciones y tiempos."
+  ],
+  [
+    "Buenas noches",
+    "Hazme llegar la propuesta con detalles por este canal en un momento si es posible."
+  ],
+  [
+    "Buenas noches",
+    "Hazme llegar la propuesta por este canal con fechas y forma de pago."
+  ],
+  [
+    "Buenas noches",
+    "Hazme llegar la propuesta por este canal y lo reviso."
+  ],
+  [
+    "Buenas noches",
+    "Hazme llegar los detalles por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Mandame la cotizacion completa por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Mandame la propuesta con detalles por este canal con precios y opciones."
+  ],
+  [
+    "Buenas noches",
+    "Por favor, pasame los detalles por este chat."
+  ],
+  [
+    "Buenas noches",
+    "Por favor, remiteme la propuesta con condiciones por este chat."
+  ],
+  [
+    "Buenas noches",
+    "Por favor, remiteme la propuesta por este chat."
+  ],
+  [
+    "Buenas noches",
+    "Remiteme el detalle de la propuesta por este medio con el cronograma."
+  ],
+  [
+    "Buenas noches",
+    "Remiteme la propuesta completa por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas noches",
+    "Remiteme los detalles por este medio con pasos y tiempos."
+  ],
+  [
+    "Buenas noches",
+    "Si, envia el resumen por este medio, gracias."
+  ],
+  [
+    "Buenas noches",
+    "Si, hazme llegar el resumen por este canal, gracias."
+  ],
+  [
+    "Buenas noches",
+    "Si, mandame la propuesta con precios por este medio, gracias."
+  ],
+  [
+    "Buenas noches",
+    "Si, remiteme la propuesta por este canal, gracias."
+  ],
+  [
+    "Buenas noches",
+    "Si, remiteme la propuesta por este chat, gracias."
+  ],
+  [
+    "Buenas noches, comparteme el resumen por este canal en el transcurso del dia."
+  ],
+  [
+    "Buenas noches, comparteme la cotizacion completa por este medio cuando la tengas lista."
+  ],
+  [
+    "Buenas noches, comparteme la propuesta con condiciones por aqui con precios y opciones."
+  ],
+  [
+    "Buenas noches, comparteme la propuesta con precios por este medio en cuanto puedas."
+  ],
+  [
+    "Buenas noches, deja la cotizacion completa por este medio y lo reviso apenas llegue."
+  ],
+  [
+    "Buenas noches, deja la cotizacion por aqui y lo reviso con calma."
+  ],
+  [
+    "Buenas noches, deja la informacion completa por aqui y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas noches, deja la informacion por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas noches, deja la propuesta con condiciones por este chat y lo reviso con calma."
+  ],
+  [
+    "Buenas noches, deja la propuesta con detalles por este canal y lo reviso apenas llegue."
+  ],
+  [
+    "Buenas noches, deja la propuesta con precios por este medio y lo reviso con calma."
+  ],
+  [
+    "Buenas noches, envia el detalle de la propuesta por aqui con el cronograma."
+  ],
+  [
+    "Buenas noches, envia la cotizacion por aqui y lo reviso con calma."
+  ],
+  [
+    "Buenas noches, envia la propuesta con detalles por aqui y lo reviso con calma."
+  ],
+  [
+    "Buenas noches, envia la propuesta con detalles por este medio en un momento si es posible."
+  ],
+  [
+    "Buenas noches, hazme llegar la propuesta con condiciones por aqui cuando la tengas lista."
+  ],
+  [
+    "Buenas noches, mandame la cotizacion completa por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Buenas noches, mandame la propuesta con detalles por aqui con condiciones y tiempos."
+  ],
+  [
+    "Buenas noches, me interesa, hazme llegar la propuesta completa por aqui."
+  ],
+  [
+    "Buenas noches, me sirve, hazme llegar el detalle de la propuesta por este medio."
+  ],
+  [
+    "Buenas noches, me sirve, mandame la informacion por aqui."
+  ],
+  [
+    "Buenas noches, me sirve, mandame la propuesta completa por este canal."
+  ],
+  [
+    "Buenas noches, pasame el detalle de la propuesta por este canal con pasos y tiempos."
+  ],
+  [
+    "Buenas noches, pasame el detalle de la propuesta por este chat y lo veo."
+  ],
+  [
+    "Buenas noches, pasame la propuesta con precios por este chat con pasos y tiempos."
+  ],
+  [
+    "Buenas noches, por favor comparteme la propuesta completa por este canal."
+  ],
+  [
+    "Buenas noches, por favor envia la informacion completa por aqui."
+  ],
+  [
+    "Buenas noches, por favor hazme llegar el resumen por este chat."
+  ],
+  [
+    "Buenas noches, por favor hazme llegar la propuesta con precios por este canal."
+  ],
+  [
+    "Buenas noches, por favor pasame la cotizacion por este chat."
+  ],
+  [
+    "Buenas noches, por favor remiteme la propuesta con condiciones por este canal."
+  ],
+  [
+    "Buenas noches, por favor remiteme la propuesta con detalles por este canal."
+  ],
+  [
+    "Buenas noches, puedes enviar la propuesta por este chat? Gracias."
+  ],
+  [
+    "Buenas noches, puedes hacerme llegar el resumen por este chat? Gracias."
+  ],
+  [
+    "Buenas noches, puedes pasarme el detalle de la propuesta por aqui? Por favor."
+  ],
+  [
+    "Buenas noches, quedo pendiente, envia la informacion completa por este chat."
+  ],
+  [
+    "Buenas noches, quedo pendiente, mandame la propuesta con detalles por este medio."
+  ],
+  [
+    "Buenas noches, quedo pendiente, pasame la cotizacion completa por este medio."
+  ],
+  [
+    "Buenas noches, quedo pendiente, remiteme la propuesta con detalles por aqui."
+  ],
+  [
+    "Buenas noches, remiteme el detalle de la propuesta por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Buenas noches, remiteme la cotizacion completa por este medio y lo reviso."
+  ],
+  [
+    "Buenas noches, remiteme la cotizacion por este chat con fechas y forma de pago."
+  ],
+  [
+    "Buenas noches, remiteme la informacion por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Buenas noches, remiteme los detalles por aqui y lo veo."
+  ],
+  [
+    "Buenas noches, si es posible comparteme la informacion completa por este canal hoy."
+  ],
+  [
+    "Buenas noches, si es posible envia el resumen por este chat hoy."
+  ],
+  [
+    "Buenas noches, si es posible mandame la cotizacion por este medio hoy."
+  ],
+  [
+    "Buenas noches, si es posible mandame la propuesta completa por este medio hoy."
+  ],
+  [
+    "Buenas noches, si, mandame la cotizacion por aqui y lo veo y te confirmo."
+  ],
+  [
+    "Buenas noches, si, mandame la informacion completa por este chat y lo reviso con calma y te confirmo."
+  ],
+  [
+    "Buenas noches, si, pasame el resumen por este canal y lo reviso y te escribo."
+  ],
+  [
+    "Buenas noches, si, remiteme la informacion completa por este canal y lo veo y te respondo."
+  ],
+  [
+    "Buenas tardes",
+    "Comparteme la informacion por este canal y lo reviso."
+  ],
+  [
+    "Buenas tardes",
+    "Comparteme la propuesta completa por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas tardes",
+    "De acuerdo, envia la propuesta completa por este chat."
+  ],
+  [
+    "Buenas tardes",
+    "De acuerdo, envia la propuesta con precios por este canal."
+  ],
+  [
+    "Buenas tardes",
+    "De acuerdo, pasame la informacion por este medio."
+  ],
+  [
+    "Buenas tardes",
+    "Envia la propuesta completa por este canal con el cronograma."
+  ],
+  [
+    "Buenas tardes",
+    "Hazme llegar la cotizacion por este chat en el transcurso del dia."
+  ],
+  [
+    "Buenas tardes",
+    "Hazme llegar la propuesta con condiciones por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas tardes",
+    "Hazme llegar los detalles por este canal con lo incluido y lo no incluido."
+  ],
+  [
+    "Buenas tardes",
+    "Mandame la informacion por aqui y lo reviso."
+  ],
+  [
+    "Buenas tardes",
+    "Pasame el resumen por aqui y lo reviso."
+  ],
+  [
+    "Buenas tardes",
+    "Pasame la informacion completa por este canal en el transcurso del dia."
+  ],
+  [
+    "Buenas tardes",
+    "Pasame la propuesta con detalles por este canal en cuanto puedas."
+  ],
+  [
+    "Buenas tardes",
+    "Por favor, envia la propuesta con detalles por este canal."
+  ],
+  [
+    "Buenas tardes",
+    "Por favor, mandame el detalle de la propuesta por este canal."
+  ],
+  [
+    "Buenas tardes",
+    "Remiteme el resumen por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas tardes",
+    "Remiteme la propuesta completa por este chat con precios y opciones."
+  ],
+  [
+    "Buenas tardes",
+    "Remiteme la propuesta con condiciones por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenas tardes",
+    "Remiteme la propuesta con detalles por aqui con pasos y tiempos."
+  ],
+  [
+    "Buenas tardes",
+    "Si, mandame la cotizacion completa por este medio, gracias."
+  ],
+  [
+    "Buenas tardes, comparteme la cotizacion por este medio en el transcurso del dia."
+  ],
+  [
+    "Buenas tardes, comparteme la propuesta con detalles por este chat apenas puedas."
+  ],
+  [
+    "Buenas tardes, deja el resumen por aqui y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas tardes, deja la cotizacion por este chat y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas tardes, deja la informacion por este chat y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas tardes, deja la propuesta completa por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenas tardes, deja los detalles por este canal y lo reviso apenas llegue."
+  ],
+  [
+    "Buenas tardes, envia la cotizacion completa por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Buenas tardes, hazme llegar la cotizacion por aqui con precios y opciones."
+  ],
+  [
+    "Buenas tardes, hazme llegar la informacion completa por este canal con fechas y forma de pago."
+  ],
+  [
+    "Buenas tardes, hazme llegar la propuesta con detalles por este chat con el cronograma."
+  ],
+  [
+    "Buenas tardes, hazme llegar la propuesta con detalles por este chat en cuanto puedas."
+  ],
+  [
+    "Buenas tardes, hazme llegar la propuesta con precios por aqui en el transcurso del dia."
+  ],
+  [
+    "Buenas tardes, mandame la cotizacion completa por aqui con pasos y tiempos."
+  ],
+  [
+    "Buenas tardes, mandame la propuesta completa por aqui; lo reviso y te escribo."
+  ],
+  [
+    "Buenas tardes, mandame la propuesta con condiciones por aqui; lo reviso y te escribo."
+  ],
+  [
+    "Buenas tardes, mandame la propuesta con detalles por este chat y lo reviso con calma."
+  ],
+  [
+    "Buenas tardes, mandame los detalles por este canal; lo veo y te respondo."
+  ],
+  [
+    "Buenas tardes, mandame los detalles por este chat con monto y plazo."
+  ],
+  [
+    "Buenas tardes, me interesa, remiteme la informacion completa por este canal."
+  ],
+  [
+    "Buenas tardes, me sirve, pasame el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buenas tardes, por favor comparteme el resumen por este medio."
+  ],
+  [
+    "Buenas tardes, por favor comparteme los detalles por este chat."
+  ],
+  [
+    "Buenas tardes, por favor mandame la propuesta con condiciones por este medio."
+  ],
+  [
+    "Buenas tardes, por favor mandame la propuesta con precios por este canal."
+  ],
+  [
+    "Buenas tardes, por favor pasame la propuesta con precios por este canal."
+  ],
+  [
+    "Buenas tardes, por favor remiteme el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buenas tardes, por favor remiteme la propuesta con precios por aqui."
+  ],
+  [
+    "Buenas tardes, puedes enviar la cotizacion completa por este medio? Por favor."
+  ],
+  [
+    "Buenas tardes, puedes hacerme llegar la informacion por este canal? Por favor."
+  ],
+  [
+    "Buenas tardes, puedes mandame la propuesta con condiciones por este chat? Por favor."
+  ],
+  [
+    "Buenas tardes, puedes remitirme la propuesta con precios por aqui? Por favor."
+  ],
+  [
+    "Buenas tardes, quedo pendiente, comparteme el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buenas tardes, quedo pendiente, comparteme la cotizacion completa por aqui."
+  ],
+  [
+    "Buenas tardes, quedo pendiente, pasame los detalles por este chat."
+  ],
+  [
+    "Buenas tardes, quedo pendiente, remiteme la propuesta con precios por este medio."
+  ],
+  [
+    "Buenas tardes, remiteme la informacion completa por este medio y lo veo."
+  ],
+  [
+    "Buenas tardes, remiteme la propuesta completa por este medio con precios y opciones."
+  ],
+  [
+    "Buenas tardes, si es posible comparteme la propuesta con detalles por este medio hoy."
+  ],
+  [
+    "Buenas tardes, si es posible envia la cotizacion por este canal hoy."
+  ],
+  [
+    "Buenas tardes, si es posible hazme llegar la cotizacion completa por aqui hoy."
+  ],
+  [
+    "Buenas tardes, si es posible pasame la cotizacion por este chat hoy."
+  ],
+  [
+    "Buenas tardes, si es posible remiteme la cotizacion por este chat hoy."
+  ],
+  [
+    "Buenas tardes, si es posible remiteme la propuesta por este canal hoy."
+  ],
+  [
+    "Buenas tardes, si, comparteme la propuesta con condiciones por este medio y lo valido y te aviso."
+  ],
+  [
+    "Buenas tardes, si, envia el detalle de la propuesta por este chat y lo reviso con calma y te respondo."
+  ],
+  [
+    "Buenas tardes, si, envia la informacion por este canal y la reviso y te escribo."
+  ],
+  [
+    "Buenas tardes, si, hazme llegar los detalles por este canal y lo valido y te escribo."
+  ],
+  [
+    "Buenas tardes, si, remiteme la informacion por aqui y la reviso y te confirmo."
+  ],
+  [
+    "Buenas, comparteme la cotizacion por este medio y lo reviso."
+  ],
+  [
+    "Buenas, comparteme la informacion por aqui; lo reviso y te aviso."
+  ],
+  [
+    "Buenas, comparteme la informacion por este medio cuando la tengas lista."
+  ],
+  [
+    "Buenas, comparteme la propuesta con precios por este medio; lo veo y te respondo."
+  ],
+  [
+    "Buenas, envia la propuesta con precios por este medio y lo reviso."
+  ],
+  [
+    "Buenas, envia los detalles por este canal y lo reviso con calma."
+  ],
+  [
+    "Buenas, hazme llegar la informacion completa por este canal; lo veo y te respondo."
+  ],
+  [
+    "Buenas, hazme llegar la informacion completa por este chat en cuanto puedas."
+  ],
+  [
+    "Buenas, hazme llegar la informacion por este medio con monto y plazo."
+  ],
+  [
+    "Buenas, hazme llegar la propuesta con precios por aqui cuando la tengas lista."
+  ],
+  [
+    "Buenas, hazme llegar la propuesta con precios por este medio y lo valido."
+  ],
+  [
+    "Buenas, hazme llegar los detalles por este canal con fechas y forma de pago."
+  ],
+  [
+    "Buenas, mandame el detalle de la propuesta por este medio y lo valido."
+  ],
+  [
+    "Buenas, mandame la cotizacion completa por aqui; lo reviso y te escribo."
+  ],
+  [
+    "Buenas, mandame la propuesta por este chat con lo incluido y lo no incluido."
+  ],
+  [
+    "Buenas, me interesa, comparteme el resumen por aqui."
+  ],
+  [
+    "Buenas, me interesa, envia el resumen por este canal."
+  ],
+  [
+    "Buenas, me interesa, hazme llegar el detalle de la propuesta por este medio."
+  ],
+  [
+    "Buenas, me interesa, hazme llegar la propuesta con detalles por este canal."
+  ],
+  [
+    "Buenas, me interesa, hazme llegar la propuesta con precios por este medio."
+  ],
+  [
+    "Buenas, me interesa, pasame el resumen por aqui."
+  ],
+  [
+    "Buenas, me interesa, remiteme la informacion completa por este canal."
+  ],
+  [
+    "Buenas, me sirve, comparteme la informacion por este canal."
+  ],
+  [
+    "Buenas, me sirve, pasame la propuesta por este chat."
+  ],
+  [
+    "Buenas, me sirve, remiteme los detalles por aqui."
+  ],
+  [
+    "Buenas, pasame la propuesta con detalles por aqui en un momento si es posible."
+  ],
+  [
+    "Buenas, por favor envia la informacion por este chat."
+  ],
+  [
+    "Buenas, por favor hazme llegar la informacion completa por este canal."
+  ],
+  [
+    "Buenas, por favor mandame la informacion completa por este chat."
+  ],
+  [
+    "Buenas, por favor remiteme la propuesta con condiciones por este canal."
+  ],
+  [
+    "Buenas, puedes enviar el detalle de la propuesta por este chat? Gracias."
+  ],
+  [
+    "Buenas, puedes mandame la propuesta con condiciones por este chat? Por favor."
+  ],
+  [
+    "Buenas, puedes pasarme el resumen por aqui? Gracias."
+  ],
+  [
+    "Buenas, quedo pendiente, envia la informacion por este chat."
+  ],
+  [
+    "Buenas, quedo pendiente, hazme llegar la propuesta con condiciones por este medio."
+  ],
+  [
+    "Buenas, quedo pendiente, remiteme la propuesta completa por este chat."
+  ],
+  [
+    "Buenas, quedo pendiente, remiteme la propuesta con detalles por este medio."
+  ],
+  [
+    "Buenas, remiteme la propuesta por este medio; lo reviso y te escribo."
+  ],
+  [
+    "Buenas, si es posible comparteme la informacion por este chat hoy."
+  ],
+  [
+    "Buenas, si es posible pasame la informacion por aqui hoy."
+  ],
+  [
+    "Buenas, si es posible pasame la propuesta completa por aqui hoy."
+  ],
+  [
+    "Buenas, si es posible pasame la propuesta completa por este chat hoy."
+  ],
+  [
+    "Buenas, si, envia la propuesta con detalles por este medio y lo valido y te confirmo."
+  ],
+  [
+    "Buenas, si, hazme llegar la cotizacion completa por este chat y lo valido y te escribo."
+  ],
+  [
+    "Buenas, si, pasame el detalle de la propuesta por aqui y la reviso y te escribo."
+  ],
+  [
+    "Buenos dias",
+    "Comparteme la cotizacion completa por este chat y lo reviso."
+  ],
+  [
+    "Buenos dias",
+    "Comparteme la cotizacion por este canal en el transcurso del dia."
+  ],
+  [
+    "Buenos dias",
+    "Comparteme la informacion por este chat cuando la tengas lista."
+  ],
+  [
+    "Buenos dias",
+    "Hazme llegar el resumen por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenos dias",
+    "Hazme llegar la propuesta con detalles por este medio con los terminos."
+  ],
+  [
+    "Buenos dias",
+    "Hazme llegar los detalles por aqui con todo el detalle."
+  ],
+  [
+    "Buenos dias",
+    "Mandame los detalles por este canal; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Buenos dias",
+    "Pasame la informacion por este canal y lo reviso."
+  ],
+  [
+    "Buenos dias",
+    "Pasame la propuesta con detalles por este medio con lo incluido y lo no incluido."
+  ],
+  [
+    "Buenos dias",
+    "Por favor, envia la propuesta por este medio."
+  ],
+  [
+    "Buenos dias",
+    "Por favor, hazme llegar la propuesta completa por este medio."
+  ],
+  [
+    "Buenos dias",
+    "Por favor, remiteme la propuesta por este chat."
+  ],
+  [
+    "Buenos dias",
+    "Remiteme la cotizacion por aqui y lo reviso."
+  ],
+  [
+    "Buenos dias, deja el detalle de la propuesta por aqui y lo reviso con calma."
+  ],
+  [
+    "Buenos dias, deja la informacion completa por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Buenos dias, hazme llegar la propuesta completa por este canal cuando la tengas lista."
+  ],
+  [
+    "Buenos dias, hazme llegar los detalles por este medio cuando la tengas lista."
+  ],
+  [
+    "Buenos dias, mandame la cotizacion por este chat y lo veo."
+  ],
+  [
+    "Buenos dias, mandame la propuesta con condiciones por aqui en cuanto puedas."
+  ],
+  [
+    "Buenos dias, me interesa, comparteme el detalle de la propuesta por este canal."
+  ],
+  [
+    "Buenos dias, me interesa, comparteme la propuesta completa por este medio."
+  ],
+  [
+    "Buenos dias, me interesa, pasame el detalle de la propuesta por aqui."
+  ],
+  [
+    "Buenos dias, me interesa, remiteme la informacion completa por aqui."
+  ],
+  [
+    "Buenos dias, me sirve, mandame la propuesta completa por aqui."
+  ],
+  [
+    "Buenos dias, me sirve, pasame la propuesta con detalles por este chat."
+  ],
+  [
+    "Buenos dias, me sirve, pasame la propuesta con detalles por este medio."
+  ],
+  [
+    "Buenos dias, me sirve, remiteme el detalle de la propuesta por este medio."
+  ],
+  [
+    "Buenos dias, me sirve, remiteme el resumen por aqui."
+  ],
+  [
+    "Buenos dias, pasame la cotizacion por este canal en el transcurso del dia."
+  ],
+  [
+    "Buenos dias, pasame la propuesta con precios por este medio; lo reviso y te aviso."
+  ],
+  [
+    "Buenos dias, pasame la propuesta con precios por este medio; lo reviso y te escribo."
+  ],
+  [
+    "Buenos dias, por favor mandame el detalle de la propuesta por este medio."
+  ],
+  [
+    "Buenos dias, por favor mandame la propuesta por este canal."
+  ],
+  [
+    "Buenos dias, por favor pasame la propuesta con precios por este chat."
+  ],
+  [
+    "Buenos dias, puedes compartirme la cotizacion completa por aqui? Por favor."
+  ],
+  [
+    "Buenos dias, puedes hacerme llegar el detalle de la propuesta por este canal? Gracias."
+  ],
+  [
+    "Buenos dias, puedes hacerme llegar la propuesta con detalles por este chat? Gracias."
+  ],
+  [
+    "Buenos dias, puedes remitirme la propuesta con condiciones por este medio? Gracias."
+  ],
+  [
+    "Buenos dias, quedo pendiente, mandame la propuesta con condiciones por este medio."
+  ],
+  [
+    "Buenos dias, remiteme el detalle de la propuesta por aqui y lo reviso."
+  ],
+  [
+    "Buenos dias, remiteme la cotizacion completa por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Buenos dias, remiteme la informacion completa por este canal y lo valido."
+  ],
+  [
+    "Buenos dias, remiteme la propuesta con condiciones por aqui; lo reviso y te aviso."
+  ],
+  [
+    "Buenos dias, remiteme la propuesta con condiciones por este canal y lo valido."
+  ],
+  [
+    "Buenos dias, remiteme la propuesta con detalles por este medio; lo veo y te respondo."
+  ],
+  [
+    "Buenos dias, si es posible envia la propuesta por aqui hoy."
+  ],
+  [
+    "Buenos dias, si es posible envia los detalles por este canal hoy."
+  ],
+  [
+    "Buenos dias, si es posible mandame el detalle de la propuesta por aqui hoy."
+  ],
+  [
+    "Buenos dias, si es posible mandame la propuesta con condiciones por este chat hoy."
+  ],
+  [
+    "Buenos dias, si es posible pasame la cotizacion por este canal hoy."
+  ],
+  [
+    "Buenos dias, si es posible remiteme los detalles por este medio hoy."
+  ],
+  [
+    "Buenos dias, si, comparteme la propuesta por este canal y lo reviso y te doy respuesta."
+  ],
+  [
+    "Buenos dias, si, envia la propuesta con condiciones por este chat y lo reviso y te escribo."
+  ],
+  [
+    "Buenos dias, si, hazme llegar la propuesta completa por este chat y lo reviso y te respondo."
+  ],
+  [
+    "Buenos dias, si, remiteme la propuesta completa por este medio y lo valido y te aviso."
+  ],
+  [
+    "Comparteme el detalle de la propuesta por aqui, gracias."
+  ],
+  [
+    "Comparteme el resumen por este canal, gracias."
+  ],
+  [
+    "Comparteme la cotizacion por aqui, por favor."
+  ],
+  [
+    "Comparteme la cotizacion por este chat, por favor."
+  ],
+  [
+    "Comparteme la propuesta con detalles por este canal, por favor."
+  ],
+  [
+    "Comparteme la propuesta con detalles por este chat, por favor."
+  ],
+  [
+    "Comparteme la propuesta por este chat, gracias."
+  ],
+  [
+    "De acuerdo, comparteme la propuesta con condiciones por este chat con monto y plazo."
+  ],
+  [
+    "De acuerdo, comparteme los detalles por este chat con todo el detalle."
+  ],
+  [
+    "De acuerdo, deja la propuesta con precios por este chat y lo veo en cuanto lo reciba."
+  ],
+  [
+    "De acuerdo, envia el detalle de la propuesta por este canal en cuanto puedas."
+  ],
+  [
+    "De acuerdo, envia la propuesta con precios por este medio en el transcurso del dia."
+  ],
+  [
+    "De acuerdo, hazme llegar los detalles por este chat y lo reviso con calma."
+  ],
+  [
+    "De acuerdo, me interesa, envia la propuesta con precios por este canal."
+  ],
+  [
+    "De acuerdo, me sirve, comparteme la propuesta con precios por este medio."
+  ],
+  [
+    "De acuerdo, me sirve, hazme llegar la informacion completa por este medio."
+  ],
+  [
+    "De acuerdo, pasame el detalle de la propuesta por aqui y lo valido."
+  ],
+  [
+    "De acuerdo, pasame la cotizacion por aqui en un momento si es posible."
+  ],
+  [
+    "De acuerdo, pasame la propuesta con precios por este medio y lo reviso con calma."
+  ],
+  [
+    "De acuerdo, pasame los detalles por aqui con precios y opciones."
+  ],
+  [
+    "De acuerdo, por favor comparteme el resumen por este canal."
+  ],
+  [
+    "De acuerdo, por favor comparteme la propuesta con precios por este medio."
+  ],
+  [
+    "De acuerdo, por favor envia la informacion completa por este canal."
+  ],
+  [
+    "De acuerdo, por favor hazme llegar el detalle de la propuesta por aqui."
+  ],
+  [
+    "De acuerdo, puedes enviar la cotizacion por este chat? Gracias."
+  ],
+  [
+    "De acuerdo, puedes mandame la cotizacion completa por este canal? Gracias."
+  ],
+  [
+    "De acuerdo, puedes mandame la informacion completa por este canal? Gracias."
+  ],
+  [
+    "De acuerdo, puedes mandame la propuesta por este chat? Gracias."
+  ],
+  [
+    "De acuerdo, quedo pendiente, hazme llegar el detalle de la propuesta por este medio."
+  ],
+  [
+    "De acuerdo, quedo pendiente, hazme llegar la informacion por este canal."
+  ],
+  [
+    "De acuerdo, quedo pendiente, mandame la propuesta por este canal."
+  ],
+  [
+    "De acuerdo, quedo pendiente, mandame los detalles por aqui."
+  ],
+  [
+    "De acuerdo, quedo pendiente, pasame el detalle de la propuesta por este canal."
+  ],
+  [
+    "De acuerdo, quedo pendiente, pasame la cotizacion completa por este chat."
+  ],
+  [
+    "De acuerdo, remiteme la propuesta completa por este medio y lo valido."
+  ],
+  [
+    "De acuerdo, remiteme la propuesta con detalles por este medio cuando la tengas lista."
+  ],
+  [
+    "De acuerdo, remiteme la propuesta con precios por este chat; lo reviso y te escribo."
+  ],
+  [
+    "De acuerdo, remiteme la propuesta por aqui y la reviso."
+  ],
+  [
+    "De acuerdo, remiteme los detalles por aqui con todo el detalle."
+  ],
+  [
+    "De acuerdo, si es posible hazme llegar el resumen por este canal hoy."
+  ],
+  [
+    "De acuerdo, si es posible pasame la propuesta con condiciones por aqui hoy."
+  ],
+  [
+    "De acuerdo, si, envia la propuesta con condiciones por este medio y lo valido y te doy respuesta."
+  ],
+  [
+    "De acuerdo, si, mandame los detalles por aqui y lo veo y te escribo."
+  ],
+  [
+    "Envia el detalle de la propuesta por este canal, gracias."
+  ],
+  [
+    "Envia la cotizacion completa por este canal, por favor."
+  ],
+  [
+    "Envia la cotizacion por este canal, por favor."
+  ],
+  [
+    "Envia la informacion por aqui, por favor."
+  ],
+  [
+    "Envia la informacion por este canal, gracias."
+  ],
+  [
+    "Envia la informacion por este medio, gracias."
+  ],
+  [
+    "Envia la propuesta completa por aqui, por favor."
+  ],
+  [
+    "Excelente, comparteme el detalle de la propuesta por este chat con fechas y forma de pago."
+  ],
+  [
+    "Excelente, comparteme el detalle de la propuesta por este medio con condiciones y tiempos."
+  ],
+  [
+    "Excelente, comparteme el resumen por este chat; lo veo y te respondo."
+  ],
+  [
+    "Excelente, comparteme la informacion completa por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Excelente, deja la cotizacion completa por aqui y lo reviso con calma."
+  ],
+  [
+    "Excelente, deja la propuesta con condiciones por este canal y lo reviso con calma."
+  ],
+  [
+    "Excelente, deja la propuesta por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Excelente, deja los detalles por aqui y lo reviso apenas llegue."
+  ],
+  [
+    "Excelente, envia la propuesta completa por este medio con el cronograma."
+  ],
+  [
+    "Excelente, envia la propuesta con condiciones por este medio y lo reviso con calma."
+  ],
+  [
+    "Excelente, hazme llegar la propuesta completa por este medio; lo reviso y te escribo."
+  ],
+  [
+    "Excelente, mandame la informacion por este canal apenas puedas."
+  ],
+  [
+    "Excelente, me sirve, mandame la cotizacion por aqui."
+  ],
+  [
+    "Excelente, pasame la informacion completa por este canal con precios y opciones."
+  ],
+  [
+    "Excelente, pasame la propuesta completa por aqui con pasos y tiempos."
+  ],
+  [
+    "Excelente, por favor envia la informacion por este chat."
+  ],
+  [
+    "Excelente, por favor mandame la cotizacion por aqui."
+  ],
+  [
+    "Excelente, puedes compartirme la cotizacion por este medio? Gracias."
+  ],
+  [
+    "Excelente, puedes pasarme el detalle de la propuesta por este medio? Por favor."
+  ],
+  [
+    "Excelente, puedes remitirme la informacion por este chat? Por favor."
+  ],
+  [
+    "Excelente, quedo pendiente, comparteme la informacion por aqui."
+  ],
+  [
+    "Excelente, quedo pendiente, comparteme los detalles por este medio."
+  ],
+  [
+    "Excelente, quedo pendiente, envia la propuesta completa por este chat."
+  ],
+  [
+    "Excelente, quedo pendiente, envia la propuesta con condiciones por aqui."
+  ],
+  [
+    "Excelente, quedo pendiente, mandame la propuesta con precios por este canal."
+  ],
+  [
+    "Excelente, quedo pendiente, remiteme el resumen por este canal."
+  ],
+  [
+    "Excelente, quedo pendiente, remiteme la propuesta con condiciones por este medio."
+  ],
+  [
+    "Excelente, remiteme la informacion por este medio cuando puedas."
+  ],
+  [
+    "Excelente, remiteme los detalles por aqui con condiciones y tiempos."
+  ],
+  [
+    "Excelente, remiteme los detalles por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Excelente, remiteme los detalles por este chat y lo veo."
+  ],
+  [
+    "Excelente, si es posible comparteme la cotizacion por este chat hoy."
+  ],
+  [
+    "Excelente, si es posible comparteme la propuesta con precios por este medio hoy."
+  ],
+  [
+    "Excelente, si es posible envia la propuesta por este chat hoy."
+  ],
+  [
+    "Excelente, si es posible envia los detalles por este chat hoy."
+  ],
+  [
+    "Excelente, si es posible hazme llegar el resumen por aqui hoy."
+  ],
+  [
+    "Excelente, si, comparteme la propuesta completa por aqui y lo veo y te respondo."
+  ],
+  [
+    "Excelente, si, envia la propuesta con condiciones por este medio y lo reviso con calma y te confirmo."
+  ],
+  [
+    "Excelente, si, envia la propuesta con precios por aqui y lo valido y te respondo."
+  ],
+  [
+    "Excelente, si, pasame la cotizacion completa por aqui y lo reviso y te escribo."
+  ],
+  [
+    "Excelente, si, pasame la propuesta completa por este canal y lo veo y te aviso."
+  ],
+  [
+    "Excelente, si, pasame los detalles por este chat y lo veo y te aviso."
+  ],
+  [
+    "Excelente, si, remiteme el detalle de la propuesta por aqui y la reviso y te confirmo."
+  ],
+  [
+    "Genial, comparteme la propuesta con detalles por aqui con monto y plazo."
+  ],
+  [
+    "Genial, comparteme la propuesta con precios por aqui y lo veo."
+  ],
+  [
+    "Genial, deja el detalle de la propuesta por este canal y lo reviso con calma."
+  ],
+  [
+    "Genial, deja la informacion por aqui y lo reviso apenas llegue."
+  ],
+  [
+    "Genial, deja la propuesta completa por este medio y lo reviso con calma."
+  ],
+  [
+    "Genial, deja los detalles por este canal y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Genial, envia el detalle de la propuesta por este chat y lo valido."
+  ],
+  [
+    "Genial, envia la informacion completa por aqui en el transcurso del dia."
+  ],
+  [
+    "Genial, envia la informacion completa por este medio con lo incluido y lo no incluido."
+  ],
+  [
+    "Genial, envia la propuesta completa por este chat con lo incluido y lo no incluido."
+  ],
+  [
+    "Genial, hazme llegar la informacion por este medio y lo valido."
+  ],
+  [
+    "Genial, hazme llegar la propuesta con condiciones por este medio con precios y opciones."
+  ],
+  [
+    "Genial, hazme llegar los detalles por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Genial, mandame el detalle de la propuesta por este medio; lo reviso y te escribo."
+  ],
+  [
+    "Genial, mandame la propuesta por este chat en el transcurso del dia."
+  ],
+  [
+    "Genial, me interesa, pasame el resumen por este medio."
+  ],
+  [
+    "Genial, me sirve, remiteme la propuesta por este medio."
+  ],
+  [
+    "Genial, pasame el detalle de la propuesta por este chat con todo el detalle."
+  ],
+  [
+    "Genial, pasame la cotizacion completa por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Genial, pasame la propuesta completa por este canal con todo el detalle."
+  ],
+  [
+    "Genial, pasame la propuesta con condiciones por aqui con los terminos."
+  ],
+  [
+    "Genial, pasame la propuesta con detalles por este medio apenas puedas."
+  ],
+  [
+    "Genial, pasame la propuesta con precios por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Genial, por favor comparteme la propuesta con precios por aqui."
+  ],
+  [
+    "Genial, por favor comparteme la propuesta por este chat."
+  ],
+  [
+    "Genial, por favor pasame el resumen por este chat."
+  ],
+  [
+    "Genial, por favor pasame la informacion completa por este canal."
+  ],
+  [
+    "Genial, por favor remiteme la propuesta con condiciones por este chat."
+  ],
+  [
+    "Genial, por favor remiteme la propuesta con detalles por este canal."
+  ],
+  [
+    "Genial, puedes enviar los detalles por aqui? Por favor."
+  ],
+  [
+    "Genial, puedes mandame la propuesta con precios por aqui? Gracias."
+  ],
+  [
+    "Genial, puedes remitirme la propuesta con condiciones por aqui? Por favor."
+  ],
+  [
+    "Genial, puedes remitirme la propuesta con precios por aqui? Gracias."
+  ],
+  [
+    "Genial, quedo pendiente, comparteme la informacion completa por este chat."
+  ],
+  [
+    "Genial, quedo pendiente, pasame la informacion completa por este canal."
+  ],
+  [
+    "Genial, quedo pendiente, pasame la informacion por este canal."
+  ],
+  [
+    "Genial, quedo pendiente, remiteme la propuesta con precios por este medio."
+  ],
+  [
+    "Genial, remiteme el detalle de la propuesta por este canal y lo valido."
+  ],
+  [
+    "Genial, remiteme el resumen por este medio y la reviso."
+  ],
+  [
+    "Genial, si es posible comparteme la propuesta completa por este canal hoy."
+  ],
+  [
+    "Genial, si es posible envia la propuesta con precios por este medio hoy."
+  ],
+  [
+    "Genial, si, comparteme los detalles por aqui y lo veo y te doy respuesta."
+  ],
+  [
+    "Genial, si, envia la propuesta con condiciones por este medio y lo veo y te aviso."
+  ],
+  [
+    "Genial, si, hazme llegar la propuesta con detalles por este canal y lo reviso con calma y te aviso."
+  ],
+  [
+    "Genial, si, pasame la propuesta con precios por este medio y lo reviso con calma y te doy respuesta."
+  ],
+  [
+    "Genial, si, remiteme los detalles por este canal y lo reviso con calma y te aviso."
+  ],
+  [
+    "Gracias",
+    "Comparteme la cotizacion completa por este medio y lo reviso."
+  ],
+  [
+    "Gracias",
+    "Comparteme la informacion completa por este canal en un momento si es posible."
+  ],
+  [
+    "Gracias",
+    "Comparteme la propuesta con condiciones por este medio con el cronograma."
+  ],
+  [
+    "Gracias",
+    "Comparteme la propuesta con detalles por este canal y lo reviso."
+  ],
+  [
+    "Gracias",
+    "Comparteme la propuesta con precios por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Gracias",
+    "De acuerdo, comparteme la propuesta por este medio."
+  ],
+  [
+    "Gracias",
+    "Mandame la cotizacion completa por este canal en un momento si es posible."
+  ],
+  [
+    "Gracias",
+    "Pasame el detalle de la propuesta por este canal con fechas y forma de pago."
+  ],
+  [
+    "Gracias",
+    "Pasame la informacion por este canal cuando puedas."
+  ],
+  [
+    "Gracias",
+    "Por favor, envia la informacion completa por este canal."
+  ],
+  [
+    "Gracias",
+    "Por favor, mandame los detalles por este chat."
+  ],
+  [
+    "Gracias",
+    "Remiteme la propuesta con condiciones por este medio con precios y opciones."
+  ],
+  [
+    "Gracias",
+    "Si, comparteme la propuesta por este medio, gracias."
+  ],
+  [
+    "Gracias",
+    "Si, hazme llegar la informacion completa por aqui, gracias."
+  ],
+  [
+    "Gracias",
+    "Si, pasame la propuesta con detalles por este medio, gracias."
+  ],
+  [
+    "Gracias, comparteme el resumen por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Gracias, comparteme la informacion completa por aqui con monto y plazo."
+  ],
+  [
+    "Gracias, comparteme la propuesta con condiciones por este chat y lo reviso con calma."
+  ],
+  [
+    "Gracias, deja el detalle de la propuesta por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Gracias, deja la informacion completa por este chat y lo reviso apenas llegue."
+  ],
+  [
+    "Gracias, deja la propuesta completa por este medio y lo reviso apenas llegue."
+  ],
+  [
+    "Gracias, envia la informacion por este chat; lo veo y te respondo."
+  ],
+  [
+    "Gracias, envia la propuesta con detalles por este chat y la reviso."
+  ],
+  [
+    "Gracias, envia la propuesta con detalles por este medio y lo veo."
+  ],
+  [
+    "Gracias, envia la propuesta con precios por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Gracias, envia la propuesta con precios por este medio; lo veo y te respondo."
+  ],
+  [
+    "Gracias, hazme llegar el detalle de la propuesta por este canal cuando la tengas lista."
+  ],
+  [
+    "Gracias, hazme llegar la propuesta con precios por este canal cuando tengas un momento."
+  ],
+  [
+    "Gracias, mandame la cotizacion por este medio con fechas y forma de pago."
+  ],
+  [
+    "Gracias, mandame la propuesta completa por este canal en un momento si es posible."
+  ],
+  [
+    "Gracias, mandame los detalles por este chat y la reviso."
+  ],
+  [
+    "Gracias, mandame los detalles por este medio con monto y plazo."
+  ],
+  [
+    "Gracias, me interesa, envia el resumen por este canal."
+  ],
+  [
+    "Gracias, me interesa, hazme llegar el detalle de la propuesta por este canal."
+  ],
+  [
+    "Gracias, me interesa, mandame la cotizacion por este medio."
+  ],
+  [
+    "Gracias, me interesa, remiteme la informacion por aqui."
+  ],
+  [
+    "Gracias, me sirve, envia la propuesta con detalles por este canal."
+  ],
+  [
+    "Gracias, pasame la informacion completa por este chat con condiciones y tiempos."
+  ],
+  [
+    "Gracias, por favor mandame la propuesta con precios por aqui."
+  ],
+  [
+    "Gracias, por favor mandame la propuesta por este medio."
+  ],
+  [
+    "Gracias, por favor pasame la cotizacion por este chat."
+  ],
+  [
+    "Gracias, puedes enviar la propuesta completa por este medio? Por favor."
+  ],
+  [
+    "Gracias, puedes enviar la propuesta con precios por este medio? Gracias."
+  ],
+  [
+    "Gracias, puedes hacerme llegar la informacion por este canal? Por favor."
+  ],
+  [
+    "Gracias, puedes mandame el detalle de la propuesta por este chat? Por favor."
+  ],
+  [
+    "Gracias, quedo pendiente, comparteme la cotizacion completa por aqui."
+  ],
+  [
+    "Gracias, remiteme la propuesta con detalles por este canal con lo incluido y lo no incluido."
+  ],
+  [
+    "Gracias, si es posible mandame la cotizacion por este medio hoy."
+  ],
+  [
+    "Gracias, si es posible remiteme la cotizacion por este canal hoy."
+  ],
+  [
+    "Gracias, si es posible remiteme la propuesta con condiciones por este medio hoy."
+  ],
+  [
+    "Gracias, si, envia la informacion completa por aqui y lo valido y te doy respuesta."
+  ],
+  [
+    "Gracias, si, hazme llegar la propuesta con precios por este canal y lo reviso y te doy respuesta."
+  ],
+  [
+    "Gracias, si, pasame la cotizacion por este medio y lo reviso con calma y te confirmo."
+  ],
+  [
+    "Gracias, si, pasame la propuesta con condiciones por este medio y lo veo y te doy respuesta."
+  ],
+  [
+    "Hazme llegar la cotizacion completa por este canal, gracias."
+  ],
+  [
+    "Hazme llegar la cotizacion completa por este canal, por favor."
+  ],
+  [
+    "Hazme llegar la informacion completa por este canal, gracias."
+  ],
+  [
+    "Hazme llegar la propuesta completa por este canal, gracias."
+  ],
+  [
+    "Hazme llegar la propuesta con condiciones por este medio, gracias."
+  ],
+  [
+    "Hazme llegar la propuesta con condiciones por este medio, por favor."
+  ],
+  [
+    "Hazme llegar la propuesta con precios por este medio, gracias."
+  ],
+  [
+    "Hazme llegar los detalles por este chat, gracias."
+  ],
+  [
+    "Hazme llegar los detalles por este chat, por favor."
+  ],
+  [
+    "Hola",
+    "Comparteme la propuesta completa por aqui y lo reviso."
+  ],
+  [
+    "Hola",
+    "Comparteme la propuesta por aqui; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Hola",
+    "Envia la propuesta completa por este medio y lo reviso."
+  ],
+  [
+    "Hola",
+    "Hazme llegar la informacion completa por este medio con los terminos."
+  ],
+  [
+    "Hola",
+    "Pasame la informacion por aqui cuando tengas un momento."
+  ],
+  [
+    "Hola",
+    "Pasame la propuesta con detalles por este chat en el transcurso del dia."
+  ],
+  [
+    "Hola",
+    "Pasame los detalles por este canal y lo reviso."
+  ],
+  [
+    "Hola",
+    "Remiteme la cotizacion por este canal en un momento si es posible."
+  ],
+  [
+    "Hola",
+    "Si, envia el detalle de la propuesta por este canal, gracias."
+  ],
+  [
+    "Hola",
+    "Si, envia la propuesta por este medio, gracias."
+  ],
+  [
+    "Hola",
+    "Si, hazme llegar la informacion por este canal, gracias."
+  ],
+  [
+    "Hola, comparteme la propuesta con condiciones por este chat con el cronograma."
+  ],
+  [
+    "Hola, comparteme la propuesta con detalles por este canal cuando tengas un momento."
+  ],
+  [
+    "Hola, deja el resumen por este chat y lo reviso apenas llegue."
+  ],
+  [
+    "Hola, deja la cotizacion completa por este canal y lo reviso apenas llegue."
+  ],
+  [
+    "Hola, deja la propuesta con detalles por aqui y lo reviso con calma."
+  ],
+  [
+    "Hola, deja la propuesta con detalles por este medio y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Hola, envia la propuesta completa por este medio cuando tengas un momento."
+  ],
+  [
+    "Hola, envia la propuesta con detalles por este chat; lo reviso y te escribo."
+  ],
+  [
+    "Hola, hazme llegar la cotizacion completa por aqui cuando la tengas lista."
+  ],
+  [
+    "Hola, hazme llegar la cotizacion por aqui con pasos y tiempos."
+  ],
+  [
+    "Hola, hazme llegar la cotizacion por este canal y lo reviso."
+  ],
+  [
+    "Hola, hazme llegar la propuesta con condiciones por este chat cuando puedas."
+  ],
+  [
+    "Hola, hazme llegar la propuesta con detalles por este medio y lo valido."
+  ],
+  [
+    "Hola, hazme llegar la propuesta con precios por este chat cuando puedas."
+  ],
+  [
+    "Hola, hazme llegar los detalles por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Hola, mandame el resumen por este medio con precios y opciones."
+  ],
+  [
+    "Hola, mandame la cotizacion por este chat y lo valido."
+  ],
+  [
+    "Hola, me interesa, comparteme la propuesta por este canal."
+  ],
+  [
+    "Hola, me sirve, hazme llegar la propuesta por este canal."
+  ],
+  [
+    "Hola, me sirve, remiteme la cotizacion completa por aqui."
+  ],
+  [
+    "Hola, pasame la cotizacion completa por este canal y lo valido."
+  ],
+  [
+    "Hola, pasame la informacion por aqui en el transcurso del dia."
+  ],
+  [
+    "Hola, por favor envia la cotizacion por este medio."
+  ],
+  [
+    "Hola, por favor hazme llegar la propuesta completa por este chat."
+  ],
+  [
+    "Hola, por favor hazme llegar la propuesta con condiciones por este chat."
+  ],
+  [
+    "Hola, por favor hazme llegar la propuesta por este chat."
+  ],
+  [
+    "Hola, por favor pasame la informacion por aqui."
+  ],
+  [
+    "Hola, por favor pasame la propuesta con detalles por aqui."
+  ],
+  [
+    "Hola, puedes mandame la cotizacion completa por este medio? Por favor."
+  ],
+  [
+    "Hola, puedes mandame la propuesta con detalles por este canal? Por favor."
+  ],
+  [
+    "Hola, puedes remitirme la propuesta con precios por este medio? Por favor."
+  ],
+  [
+    "Hola, quedo pendiente, comparteme la propuesta con detalles por este canal."
+  ],
+  [
+    "Hola, quedo pendiente, hazme llegar la cotizacion por este chat."
+  ],
+  [
+    "Hola, quedo pendiente, remiteme los detalles por este chat."
+  ],
+  [
+    "Hola, remiteme la informacion por este canal y lo veo."
+  ],
+  [
+    "Hola, remiteme la propuesta completa por aqui en un momento si es posible."
+  ],
+  [
+    "Hola, si es posible comparteme la propuesta con detalles por este chat hoy."
+  ],
+  [
+    "Hola, si es posible hazme llegar la propuesta completa por aqui hoy."
+  ],
+  [
+    "Hola, si es posible pasame la cotizacion por aqui hoy."
+  ],
+  [
+    "Hola, si es posible remiteme el detalle de la propuesta por este chat hoy."
+  ],
+  [
+    "Hola, si es posible remiteme los detalles por este medio hoy."
+  ],
+  [
+    "Hola, si, comparteme la propuesta con precios por este canal y lo veo y te doy respuesta."
+  ],
+  [
+    "Hola, si, envia la cotizacion completa por este chat y lo veo y te escribo."
+  ],
+  [
+    "Hola, si, envia la propuesta con condiciones por aqui y lo valido y te doy respuesta."
+  ],
+  [
+    "Hola, si, envia la propuesta por este canal y lo valido y te respondo."
+  ],
+  [
+    "Hola, si, mandame la cotizacion por aqui y lo valido y te doy respuesta."
+  ],
+  [
+    "Hola, si, mandame la informacion por este medio y lo reviso y te doy respuesta."
+  ],
+  [
+    "Listo",
+    "Comparteme la propuesta completa por este canal y lo reviso."
+  ],
+  [
+    "Listo",
+    "Comparteme la propuesta con precios por este chat con todo el detalle."
+  ],
+  [
+    "Listo",
+    "De acuerdo, mandame el detalle de la propuesta por este chat."
+  ],
+  [
+    "Listo",
+    "De acuerdo, mandame la informacion por aqui."
+  ],
+  [
+    "Listo",
+    "Envia el detalle de la propuesta por aqui y lo reviso."
+  ],
+  [
+    "Listo",
+    "Hazme llegar la cotizacion completa por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Listo",
+    "Hazme llegar la cotizacion completa por este medio en el transcurso del dia."
+  ],
+  [
+    "Listo",
+    "Hazme llegar la informacion completa por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Listo",
+    "Hazme llegar la propuesta con detalles por este chat y lo reviso."
+  ],
+  [
+    "Listo",
+    "Mandame la informacion por este canal y lo reviso."
+  ],
+  [
+    "Listo",
+    "Pasame el resumen por este canal con pasos y tiempos."
+  ],
+  [
+    "Listo",
+    "Por favor, comparteme la propuesta por este medio."
+  ],
+  [
+    "Listo",
+    "Por favor, envia la cotizacion completa por aqui."
+  ],
+  [
+    "Listo",
+    "Por favor, envia la propuesta completa por aqui."
+  ],
+  [
+    "Listo",
+    "Por favor, hazme llegar la propuesta completa por este medio."
+  ],
+  [
+    "Listo",
+    "Por favor, mandame la propuesta con condiciones por este medio."
+  ],
+  [
+    "Listo",
+    "Remiteme el detalle de la propuesta por este canal con precios y opciones."
+  ],
+  [
+    "Listo",
+    "Remiteme la propuesta con precios por aqui con fechas y forma de pago."
+  ],
+  [
+    "Listo",
+    "Si, hazme llegar la propuesta con condiciones por aqui, gracias."
+  ],
+  [
+    "Listo",
+    "Si, mandame la propuesta completa por este canal, gracias."
+  ],
+  [
+    "Listo",
+    "Si, pasame el resumen por este canal, gracias."
+  ],
+  [
+    "Listo",
+    "Si, remiteme la informacion completa por este medio, gracias."
+  ],
+  [
+    "Listo, comparteme la propuesta con precios por este chat con monto y plazo."
+  ],
+  [
+    "Listo, deja el detalle de la propuesta por este canal y lo reviso con calma."
+  ],
+  [
+    "Listo, deja la cotizacion por este canal y lo reviso con calma."
+  ],
+  [
+    "Listo, deja la propuesta por este canal y lo veo en cuanto lo reciba."
+  ],
+  [
+    "Listo, envia la cotizacion completa por aqui; lo reviso y te aviso."
+  ],
+  [
+    "Listo, envia la propuesta completa por aqui y lo valido."
+  ],
+  [
+    "Listo, envia la propuesta con condiciones por aqui; lo reviso y te aviso."
+  ],
+  [
+    "Listo, hazme llegar la cotizacion completa por este medio cuando tengas un momento."
+  ],
+  [
+    "Listo, hazme llegar la informacion por este canal con pasos y tiempos."
+  ],
+  [
+    "Listo, hazme llegar la propuesta con precios por este canal y lo valido."
+  ],
+  [
+    "Listo, me interesa, pasame el resumen por este chat."
+  ],
+  [
+    "Listo, me sirve, mandame la cotizacion por este medio."
+  ],
+  [
+    "Listo, pasame la informacion completa por este canal; lo reviso y te aviso."
+  ],
+  [
+    "Listo, pasame la propuesta con condiciones por este medio en el transcurso del dia."
+  ],
+  [
+    "Listo, pasame la propuesta por aqui en cuanto puedas."
+  ],
+  [
+    "Listo, pasame los detalles por este canal; lo reviso y te aviso."
+  ],
+  [
+    "Listo, por favor envia la cotizacion por este chat."
+  ],
+  [
+    "Listo, por favor envia la propuesta completa por este canal."
+  ],
+  [
+    "Listo, por favor hazme llegar la cotizacion completa por este canal."
+  ],
+  [
+    "Listo, puedes enviar la informacion por aqui? Gracias."
+  ],
+  [
+    "Listo, puedes hacerme llegar la cotizacion completa por aqui? Gracias."
+  ],
+  [
+    "Listo, puedes pasarme la cotizacion completa por este medio? Gracias."
+  ],
+  [
+    "Listo, puedes pasarme la propuesta con detalles por este chat? Gracias."
+  ],
+  [
+    "Listo, puedes pasarme los detalles por aqui? Gracias."
+  ],
+  [
+    "Listo, puedes remitirme la propuesta con precios por este chat? Gracias."
+  ],
+  [
+    "Listo, quedo pendiente, comparteme la cotizacion completa por este medio."
+  ],
+  [
+    "Listo, quedo pendiente, comparteme la propuesta con condiciones por este medio."
+  ],
+  [
+    "Listo, quedo pendiente, comparteme la propuesta con detalles por aqui."
+  ],
+  [
+    "Listo, quedo pendiente, comparteme la propuesta con detalles por este canal."
+  ],
+  [
+    "Listo, quedo pendiente, hazme llegar la propuesta con precios por aqui."
+  ],
+  [
+    "Listo, quedo pendiente, mandame la cotizacion por este chat."
+  ],
+  [
+    "Listo, quedo pendiente, mandame la propuesta por este medio."
+  ],
+  [
+    "Listo, quedo pendiente, pasame la cotizacion completa por este medio."
+  ],
+  [
+    "Listo, quedo pendiente, remiteme el detalle de la propuesta por aqui."
+  ],
+  [
+    "Listo, quedo pendiente, remiteme el detalle de la propuesta por este canal."
+  ],
+  [
+    "Listo, remiteme la propuesta con precios por este canal; lo reviso y te aviso."
+  ],
+  [
+    "Listo, si es posible comparteme los detalles por este chat hoy."
+  ],
+  [
+    "Listo, si es posible envia la cotizacion por este canal hoy."
+  ],
+  [
+    "Listo, si es posible hazme llegar los detalles por aqui hoy."
+  ],
+  [
+    "Listo, si, envia la propuesta con precios por este medio y lo valido y te confirmo."
+  ],
+  [
+    "Listo, si, remiteme la propuesta completa por aqui y lo reviso con calma y te escribo."
+  ],
+  [
+    "Listo, si, remiteme la propuesta completa por aqui y lo valido y te aviso."
+  ],
+  [
+    "Listo, si, remiteme la propuesta completa por este canal y lo veo y te doy respuesta."
+  ],
+  [
+    "Mandame el resumen por aqui, gracias."
+  ],
+  [
+    "Mandame el resumen por este canal, gracias."
+  ],
+  [
+    "Mandame el resumen por este chat, gracias."
+  ],
+  [
+    "Mandame la cotizacion completa por este medio, gracias."
+  ],
+  [
+    "Mandame la informacion completa por este medio, gracias."
+  ],
+  [
+    "Mandame la informacion por este chat, gracias."
+  ],
+  [
+    "Mandame la informacion por este chat, por favor."
+  ],
+  [
+    "Mandame la propuesta con condiciones por este medio, gracias."
+  ],
+  [
+    "Mandame la propuesta por aqui, por favor."
+  ],
+  [
+    "Mandame la propuesta por este canal, gracias."
+  ],
+  [
+    "Ok",
+    "Comparteme la informacion por este chat con fechas y forma de pago."
+  ],
+  [
+    "Ok",
+    "Comparteme la propuesta por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Ok",
+    "Envia la cotizacion completa por aqui apenas puedas."
+  ],
+  [
+    "Ok",
+    "Envia la cotizacion por este medio con monto y plazo."
+  ],
+  [
+    "Ok",
+    "Envia la propuesta por este medio y lo reviso."
+  ],
+  [
+    "Ok",
+    "Hazme llegar la informacion completa por aqui y lo reviso."
+  ],
+  [
+    "Ok",
+    "Hazme llegar la propuesta por este medio con monto y plazo."
+  ],
+  [
+    "Ok",
+    "Mandame el detalle de la propuesta por este canal con condiciones y tiempos."
+  ],
+  [
+    "Ok",
+    "Mandame la cotizacion completa por este chat y lo reviso."
+  ],
+  [
+    "Ok",
+    "Mandame la propuesta completa por este canal en el transcurso del dia."
+  ],
+  [
+    "Ok",
+    "Pasame la cotizacion por aqui cuando la tengas lista."
+  ],
+  [
+    "Ok",
+    "Pasame la informacion por este canal y lo reviso."
+  ],
+  [
+    "Ok",
+    "Pasame la propuesta completa por este canal; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Ok",
+    "Por favor, comparteme la informacion por este chat."
+  ],
+  [
+    "Ok",
+    "Por favor, envia la propuesta completa por este medio."
+  ],
+  [
+    "Ok",
+    "Por favor, mandame la propuesta con detalles por este canal."
+  ],
+  [
+    "Ok",
+    "Por favor, remiteme la propuesta con precios por aqui."
+  ],
+  [
+    "Ok",
+    "Remiteme la propuesta con precios por este chat con todo el detalle."
+  ],
+  [
+    "Ok",
+    "Si, comparteme la propuesta con precios por este canal, gracias."
+  ],
+  [
+    "Ok",
+    "Si, comparteme la propuesta por aqui, gracias."
+  ],
+  [
+    "Ok",
+    "Si, comparteme la propuesta por este chat, gracias."
+  ],
+  [
+    "Ok",
+    "Si, mandame la propuesta por este canal, gracias."
+  ],
+  [
+    "Pasame la cotizacion por aqui, por favor."
+  ],
+  [
+    "Pasame la cotizacion por este chat, por favor."
+  ],
+  [
+    "Pasame la informacion por este chat, por favor."
+  ],
+  [
+    "Pasame la informacion por este medio, por favor."
+  ],
+  [
+    "Pasame la propuesta completa por este canal, por favor."
+  ],
+  [
+    "Pasame la propuesta con precios por este medio, por favor."
+  ],
+  [
+    "Pasame los detalles por este chat, por favor."
+  ],
+  [
+    "Perfecto",
+    "Comparteme la propuesta con detalles por aqui cuando la tengas lista."
+  ],
+  [
+    "Perfecto",
+    "Comparteme la propuesta con precios por este chat con condiciones y tiempos."
+  ],
+  [
+    "Perfecto",
+    "Comparteme la propuesta por este canal; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Perfecto",
+    "De acuerdo, comparteme la informacion completa por aqui."
+  ],
+  [
+    "Perfecto",
+    "De acuerdo, mandame la propuesta por aqui."
+  ],
+  [
+    "Perfecto",
+    "De acuerdo, pasame la informacion completa por aqui."
+  ],
+  [
+    "Perfecto",
+    "De acuerdo, pasame la propuesta con condiciones por este chat."
+  ],
+  [
+    "Perfecto",
+    "Envia la cotizacion por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Perfecto",
+    "Mandame el resumen por este canal apenas puedas."
+  ],
+  [
+    "Perfecto",
+    "Mandame la informacion por este chat con monto y plazo."
+  ],
+  [
+    "Perfecto",
+    "Mandame la propuesta con condiciones por aqui y lo reviso."
+  ],
+  [
+    "Perfecto",
+    "Por favor, comparteme la cotizacion por este chat."
+  ],
+  [
+    "Perfecto",
+    "Por favor, comparteme la informacion completa por este medio."
+  ],
+  [
+    "Perfecto",
+    "Por favor, hazme llegar el resumen por este canal."
+  ],
+  [
+    "Perfecto",
+    "Por favor, mandame la informacion por aqui."
+  ],
+  [
+    "Perfecto",
+    "Por favor, remiteme la propuesta completa por este medio."
+  ],
+  [
+    "Perfecto",
+    "Remiteme la cotizacion por este chat con el cronograma."
+  ],
+  [
+    "Perfecto",
+    "Remiteme la cotizacion por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Perfecto",
+    "Remiteme la cotizacion por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Perfecto",
+    "Remiteme la informacion completa por aqui con lo incluido y lo no incluido."
+  ],
+  [
+    "Perfecto",
+    "Remiteme la propuesta con detalles por aqui cuando tengas un momento."
+  ],
+  [
+    "Perfecto",
+    "Si, hazme llegar la informacion por este medio, gracias."
+  ],
+  [
+    "Perfecto",
+    "Si, mandame la propuesta por este medio, gracias."
+  ],
+  [
+    "Perfecto",
+    "Si, remiteme la informacion completa por este canal, gracias."
+  ],
+  [
+    "Perfecto, comparteme el resumen por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Perfecto, comparteme la cotizacion completa por este chat con fechas y forma de pago."
+  ],
+  [
+    "Perfecto, comparteme la cotizacion completa por este medio con los terminos."
+  ],
+  [
+    "Perfecto, comparteme la cotizacion por este chat; lo veo y te respondo."
+  ],
+  [
+    "Perfecto, comparteme la propuesta completa por este canal; lo veo y te respondo."
+  ],
+  [
+    "Perfecto, comparteme la propuesta completa por este chat; lo reviso y te escribo."
+  ],
+  [
+    "Perfecto, deja el detalle de la propuesta por este canal y lo reviso apenas llegue."
+  ],
+  [
+    "Perfecto, deja el resumen por este medio y lo reviso apenas llegue."
+  ],
+  [
+    "Perfecto, deja la informacion por aqui y lo reviso con calma."
+  ],
+  [
+    "Perfecto, envia la informacion completa por aqui con todo el detalle."
+  ],
+  [
+    "Perfecto, envia la informacion completa por este medio cuando puedas."
+  ],
+  [
+    "Perfecto, envia la propuesta completa por este canal cuando tengas un momento."
+  ],
+  [
+    "Perfecto, envia la propuesta con condiciones por este chat con lo incluido y lo no incluido."
+  ],
+  [
+    "Perfecto, hazme llegar el detalle de la propuesta por este medio cuando puedas."
+  ],
+  [
+    "Perfecto, hazme llegar la informacion completa por aqui en cuanto puedas."
+  ],
+  [
+    "Perfecto, hazme llegar la propuesta con precios por este canal; lo reviso y te escribo."
+  ],
+  [
+    "Perfecto, mandame la cotizacion completa por este chat cuando tengas un momento."
+  ],
+  [
+    "Perfecto, mandame la cotizacion por aqui y la reviso."
+  ],
+  [
+    "Perfecto, mandame la informacion completa por este canal en un momento si es posible."
+  ],
+  [
+    "Perfecto, mandame la informacion completa por este chat apenas puedas."
+  ],
+  [
+    "Perfecto, mandame los detalles por este medio; lo reviso y te escribo."
+  ],
+  [
+    "Perfecto, me interesa, hazme llegar la propuesta con precios por este chat."
+  ],
+  [
+    "Perfecto, me interesa, mandame la propuesta con precios por este medio."
+  ],
+  [
+    "Perfecto, me interesa, pasame el detalle de la propuesta por este canal."
+  ],
+  [
+    "Perfecto, me interesa, pasame el resumen por este chat."
+  ],
+  [
+    "Perfecto, me sirve, envia la propuesta completa por este canal."
+  ],
+  [
+    "Perfecto, me sirve, hazme llegar la propuesta con detalles por este canal."
+  ],
+  [
+    "Perfecto, pasame el resumen por este canal con condiciones y tiempos."
+  ],
+  [
+    "Perfecto, pasame los detalles por este canal y lo valido."
+  ],
+  [
+    "Perfecto, por favor comparteme la propuesta completa por este canal."
+  ],
+  [
+    "Perfecto, por favor hazme llegar el resumen por este canal."
+  ],
+  [
+    "Perfecto, por favor mandame el resumen por aqui."
+  ],
+  [
+    "Perfecto, por favor mandame la propuesta con precios por este chat."
+  ],
+  [
+    "Perfecto, por favor pasame la propuesta por este canal."
+  ],
+  [
+    "Perfecto, puedes compartirme la propuesta completa por este chat? Gracias."
+  ],
+  [
+    "Perfecto, puedes compartirme la propuesta con precios por este canal? Por favor."
+  ],
+  [
+    "Perfecto, puedes compartirme la propuesta por aqui? Gracias."
+  ],
+  [
+    "Perfecto, puedes pasarme la propuesta con detalles por este canal? Gracias."
+  ],
+  [
+    "Perfecto, puedes pasarme la propuesta por este chat? Gracias."
+  ],
+  [
+    "Perfecto, puedes remitirme la cotizacion por este chat? Por favor."
+  ],
+  [
+    "Perfecto, puedes remitirme la propuesta por este chat? Por favor."
+  ],
+  [
+    "Perfecto, quedo pendiente, comparteme el resumen por este canal."
+  ],
+  [
+    "Perfecto, quedo pendiente, envia la propuesta completa por este medio."
+  ],
+  [
+    "Perfecto, quedo pendiente, envia la propuesta con precios por aqui."
+  ],
+  [
+    "Perfecto, quedo pendiente, envia la propuesta por aqui."
+  ],
+  [
+    "Perfecto, remiteme el detalle de la propuesta por este medio con el cronograma."
+  ],
+  [
+    "Perfecto, remiteme la propuesta por este chat; lo reviso y te aviso."
+  ],
+  [
+    "Perfecto, si es posible comparteme la propuesta completa por este chat hoy."
+  ],
+  [
+    "Perfecto, si es posible envia el resumen por este canal hoy."
+  ],
+  [
+    "Perfecto, si es posible envia la propuesta completa por aqui hoy."
+  ],
+  [
+    "Perfecto, si es posible hazme llegar la propuesta con condiciones por este canal hoy."
+  ],
+  [
+    "Perfecto, si es posible mandame los detalles por este medio hoy."
+  ],
+  [
+    "Perfecto, si es posible remiteme el resumen por aqui hoy."
+  ],
+  [
+    "Perfecto, si es posible remiteme la informacion completa por este chat hoy."
+  ],
+  [
+    "Perfecto, si, comparteme el detalle de la propuesta por este canal y lo reviso con calma y te doy respuesta."
+  ],
+  [
+    "Perfecto, si, hazme llegar el detalle de la propuesta por este medio y la reviso y te confirmo."
+  ],
+  [
+    "Perfecto, si, hazme llegar la informacion completa por aqui y lo valido y te confirmo."
+  ],
+  [
+    "Perfecto, si, mandame la informacion completa por este canal y lo reviso con calma y te doy respuesta."
+  ],
+  [
+    "Perfecto, si, pasame la cotizacion por este canal y lo veo y te escribo."
+  ],
+  [
+    "Perfecto, si, remiteme la informacion por este canal y lo reviso con calma y te escribo."
+  ],
+  [
+    "Remiteme la cotizacion completa por aqui, gracias."
+  ],
+  [
+    "Remiteme la cotizacion completa por este chat, por favor."
+  ],
+  [
+    "Remiteme la informacion completa por este chat, gracias."
+  ],
+  [
+    "Remiteme la informacion por este canal, por favor."
+  ],
+  [
+    "Remiteme la propuesta con detalles por aqui, por favor."
+  ],
+  [
+    "Remiteme la propuesta por aqui, por favor."
+  ],
+  [
+    "Remiteme los detalles por este chat, gracias."
+  ],
+  [
+    "Remiteme los detalles por este medio, por favor."
+  ],
+  [
+    "Si",
+    "Comparteme el resumen por aqui y lo reviso."
+  ],
+  [
+    "Si",
+    "Comparteme la cotizacion completa por este chat y lo reviso."
+  ],
+  [
+    "Si",
+    "Comparteme la cotizacion completa por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Si",
+    "De acuerdo, comparteme el resumen por este medio."
+  ],
+  [
+    "Si",
+    "De acuerdo, mandame la propuesta por este canal."
+  ],
+  [
+    "Si",
+    "De acuerdo, pasame la propuesta con condiciones por este canal."
+  ],
+  [
+    "Si",
+    "De acuerdo, remiteme la cotizacion por este medio."
+  ],
+  [
+    "Si",
+    "De acuerdo, remiteme los detalles por este medio."
+  ],
+  [
+    "Si",
+    "Envia el detalle de la propuesta por aqui con el cronograma."
+  ],
+  [
+    "Si",
+    "Envia el resumen por este chat cuando la tengas lista."
+  ],
+  [
+    "Si",
+    "Envia la propuesta completa por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Si",
+    "Hazme llegar el detalle de la propuesta por este chat en el transcurso del dia."
+  ],
+  [
+    "Si",
+    "Hazme llegar la informacion por este medio con condiciones y tiempos."
+  ],
+  [
+    "Si",
+    "Hazme llegar los detalles por este chat apenas puedas."
+  ],
+  [
+    "Si",
+    "Mandame la propuesta por este medio; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Si",
+    "Pasame la propuesta completa por este chat; te doy respuesta luego de revisarlo."
+  ],
+  [
+    "Si",
+    "Pasame la propuesta completa por este medio cuando tengas un momento."
+  ],
+  [
+    "Si",
+    "Por favor, remiteme la propuesta completa por este medio."
+  ],
+  [
+    "Si",
+    "Remiteme la informacion completa por aqui apenas puedas."
+  ],
+  [
+    "Si",
+    "Remiteme la propuesta por aqui con precios y opciones."
+  ],
+  [
+    "Si",
+    "Remiteme los detalles por este chat en el transcurso del dia."
+  ],
+  [
+    "Si",
+    "Si, envia la propuesta con precios por este medio, gracias."
+  ],
+  [
+    "Si",
+    "Si, hazme llegar la cotizacion completa por este canal, gracias."
+  ],
+  [
+    "Si",
+    "Si, hazme llegar la propuesta por este canal, gracias."
+  ],
+  [
+    "Si",
+    "Si, remiteme la propuesta con detalles por este chat, gracias."
+  ],
+  [
+    "Si",
+    "Si, remiteme la propuesta con precios por aqui, gracias."
+  ]
 ]

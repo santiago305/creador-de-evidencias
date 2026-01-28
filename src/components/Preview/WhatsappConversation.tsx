@@ -3,6 +3,7 @@ import bgWhatsapp from "../../assets/1.png";
 import { WhatsappInputBar } from "./WhatsappInputBar";
 import type { WhatsappData } from "./whatsappTypes";
 import respuestasClienteData from "../../data/respuestasCliente.json";
+import respuestasContinuacionAsesorData from "../../data/respuestasContinuacionAsesor.json";
 import {
   MessageGroup,
   DayChip,
@@ -171,19 +172,14 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
     const normalizeReply = (lines: string[]) =>
       lines.map((line) => line.replace(/\{asesor\}/g, nombreAsesorFirst));
 
-    const cierresAsesor = [
-      "Perfecto, en seguida se la envio.",
-      "Listo, ya le comparto los detalles.",
-      "Con gusto, envio la propuesta ahora mismo.",
-      "Entendido, le envio la propuesta en un momento.",
-    ];
+    const continuacionesAsesor = respuestasContinuacionAsesorData;
 
     const detalleBase = [
-      "Propuesta:",
-      data.monto?.trim() ? `- Monto: ${data.monto}` : "- Monto: N/A",
-      data.tasa?.trim() ? `- Tasa: ${data.tasa}` : "- Tasa: N/A",
-      data.cuota?.trim() ? `- Cuota: ${data.cuota}` : "- Cuota: N/A",
-      data.plazo?.trim() ? `- Plazo: ${data.plazo}` : "- Plazo: N/A",
+      "Simulación:",
+      data.monto?.trim() ? `- Monto: S/${data.monto}` : "- Monto: N/A",
+      data.tasa?.trim() ? `- Tasa: ${data.tasa} %` : "- Tasa: N/A",
+      data.cuota?.trim() ? `- Cuota: S/ ${data.cuota}` : "- Cuota: N/A",
+      data.plazo?.trim() ? `- Plazo: ${data.plazo} meses` : "- Plazo: N/A",
     ];
 
     const t1 = new Date(baseDate);
@@ -224,7 +220,7 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
         side: "out" as const,
         time: formatTimeShort(t3),
         status,
-        lines: [pick(cierresAsesor, rng)],
+        lines: [pick(continuacionesAsesor, rng)],
       },
       {
         side: "out" as const,
