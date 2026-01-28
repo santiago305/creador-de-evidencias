@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, type ReactNode } from "react";
 import bgWhatsapp from "../../assets/1.png";
 import { WhatsappInputBar } from "./WhatsappInputBar";
 import type { WhatsappData } from "./whatsappTypes";
@@ -134,10 +134,27 @@ function getFirstName(fullName: string) {
   return cleaned.split(/\s+/)[0] ?? "";
 }
 
-function linesToSpans(lines: string[]) {
-  return lines.map((line, idx) => (
-    <span key={`${idx}-${line.slice(0, 8)}`}>{line}</span>
-  ));
+function formatMoneyValue(value: string, useThousands: boolean) {
+  const cleaned = value.replace(/[^0-9.,-]/g, "").trim();
+  if (!cleaned) return null;
+
+  const normalized = cleaned.replace(/,/g, "");
+  const numberValue = Number.parseFloat(normalized);
+  if (Number.isNaN(numberValue)) return null;
+
+  return numberValue.toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+    useGrouping: useThousands,
+  });
+}
+
+function linesToSpans(lines: ReactNode[]) {
+  return lines.map((line, idx) => {
+    const key =
+      typeof line === "string" ? `${idx}-${line.slice(0, 8)}` : `${idx}`;
+    return <span key={key}>{line}</span>;
+  });
 }
 
 export function WhatsappConversation({ data }: { data: WhatsappData }) {
@@ -174,12 +191,54 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
 
     const continuacionesAsesor = respuestasContinuacionAsesorData;
 
-    const detalleBase = [
+    const useThousandsMonto = rng() < 0.5;
+    const useThousandsCuota = rng() < 0.5;
+
+    const formattedMonto = data.monto?.trim()
+      ? formatMoneyValue(data.monto, useThousandsMonto)
+      : null;
+    const formattedCuota = data.cuota?.trim()
+      ? formatMoneyValue(data.cuota, useThousandsCuota)
+      : null;
+
+    const detalleBase: ReactNode[] = [
       "Simulación:",
-      data.monto?.trim() ? `- Monto: S/${data.monto}` : "- Monto: N/A",
-      data.tasa?.trim() ? `- Tasa: ${data.tasa} %` : "- Tasa: N/A",
-      data.cuota?.trim() ? `- Cuota: S/ ${data.cuota}` : "- Cuota: N/A",
-      data.plazo?.trim() ? `- Plazo: ${data.plazo} meses` : "- Plazo: N/A",
+      formattedMonto ? (
+        <>
+          Monto: <strong>S/{formattedMonto}</strong>
+        </>
+      ) : (
+        <>
+          Monto: <strong>N/A</strong>
+        </>
+      ),
+      data.tasa?.trim() ? (
+        <>
+          Tasa: <strong>{data.tasa} %</strong>
+        </>
+      ) : (
+        <>
+          Tasa: <strong>N/A</strong>
+        </>
+      ),
+      formattedCuota ? (
+        <>
+          Cuota: <strong>S/ {formattedCuota}</strong>
+        </>
+      ) : (
+        <>
+          Cuota: <strong>N/A</strong>
+        </>
+      ),
+      data.plazo?.trim() ? (
+        <>
+          Plazo: <strong>{data.plazo} meses</strong>
+        </>
+      ) : (
+        <>
+          Plazo: <strong>N/A</strong>
+        </>
+      ),
     ];
 
     const t1 = new Date(baseDate);
@@ -206,7 +265,7 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
     const baseMessages: {
       side: "in" | "out";
       time: string;
-      lines: string[];
+      lines: ReactNode[];
       status?: MsgStatus;
     }[] = [
       {
