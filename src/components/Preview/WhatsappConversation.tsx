@@ -157,7 +157,13 @@ function linesToSpans(lines: ReactNode[]) {
   });
 }
 
-export function WhatsappConversation({ data }: { data: WhatsappData }) {
+export function WhatsappConversation({
+  data,
+  messageStatus,
+}: {
+  data: WhatsappData;
+  messageStatus?: MsgStatus;
+}) {
   const messages = useMemo(() => {
     const seed = Math.floor((Date.now() + Math.random() * 1_000_000) % 1_000_000_000);
     const rng = mulberry32(seed);
@@ -249,7 +255,8 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
     const t4 = new Date(t3);
     t4.setMinutes(t4.getMinutes() + (1 + Math.floor(rng() * 3)));
 
-    const status: MsgStatus = rng() < 0.7 ? "read" : "delivered";
+    const statusForMessages: MsgStatus =
+      messageStatus ?? (rng() < 0.7 ? "read" : "delivered");
 
     const replyLines = normalizeReply(pick(respuestasCliente, rng));
     const replyMessages = replyLines.map((line, idx) => {
@@ -271,20 +278,20 @@ export function WhatsappConversation({ data }: { data: WhatsappData }) {
       {
         side: "out" as const,
         time: formatTimeShort(t1),
-        status,
+        status: statusForMessages,
         lines: firstMessageLines,
       },
       ...replyMessages,
       {
         side: "out" as const,
         time: formatTimeShort(t3),
-        status,
+        status: statusForMessages,
         lines: [pick(continuacionesAsesor, rng)],
       },
       {
         side: "out" as const,
         time: formatTimeShort(t4),
-        status,
+        status: statusForMessages,
         lines: detalleBase,
       },
     ];

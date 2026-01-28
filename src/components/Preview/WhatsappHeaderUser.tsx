@@ -1,51 +1,24 @@
 import { useMemo } from "react";
+import type { MsgStatus } from "./WhatsappPieces";
 import type { WhatsappData } from "./whatsappTypes";
 
-type Status =
-  | { type: "hidden" }
-  | { type: "online" }
-  | { type: "lastSeen"; text: string };
+type Status = { type: "hidden" } | { type: "online" };
 
-export function WhatsappHeaderUser({ data }: { data: WhatsappData }) {
-  const status = useMemo<Status>(() => {
-    const r = Math.random();
+export function WhatsappHeaderUser({
+  data,
+  status,
+}: {
+  data: WhatsappData;
+  status?: MsgStatus;
+}) {
+  const headerStatus = useMemo<Status>(() => {
+    // Solo funciona "en linea" o nada. La condicion esta ligada al estado de los mensajes.
+    if (status) {
+      return status === "read" ? { type: "online" } : { type: "hidden" };
+    }
 
-    // 20%: no mostrar nada
-    if (r < 0.2) return { type: "hidden" };
-
-    // 25%: mostrar "en línea"
-    if (r < 0.45) return { type: "online" };
-
-    // 55%: mostrar "últ. vez ..."
-    const now = new Date();
-    const minutesNow = now.getHours() * 60 + now.getMinutes();
-
-    // 65% hoy, 35% ayer
-    const showToday = Math.random() >= 0.35;
-
-    const target = new Date(now);
-    const randomMinutes = showToday
-      ? Math.floor(Math.random() * (minutesNow + 1)) // nunca pasa la hora actual
-      : Math.floor(Math.random() * 24 * 60); // cualquier hora del día
-
-    if (!showToday) target.setDate(now.getDate() - 1);
-
-    // reset a medianoche y luego setea minutos aleatorios
-    target.setHours(0, 0, 0, 0);
-    target.setMinutes(randomMinutes);
-
-    const hours24 = target.getHours();
-    const hours12 = hours24 % 12 || 12;
-    const minutes = String(target.getMinutes()).padStart(2, "0");
-    const period = hours24 >= 12 ? "p. m." : "a. m.";
-    const time = `${hours12}:${minutes} ${period}`;
-
-    const text = showToday
-      ? `últ. vez hoy a la(s) ${time}`
-      : `ayer a la(s) ${time}`;
-
-    return { type: "lastSeen", text };
-  }, [data]);
+    return Math.random() < 0.5 ? { type: "online" } : { type: "hidden" };
+  }, [data, status]);
 
   return (
     <div className="w-full bg-white px-3 py-2 border-b border-black/10">
@@ -83,16 +56,16 @@ export function WhatsappHeaderUser({ data }: { data: WhatsappData }) {
               {data.nombre?.trim() ? data.nombre : "Aracely MD"}
             </div>
 
-            {/* Status line: online / last seen / hidden */}
-            {status.type !== "hidden" && (
+            {/* Status line: solo "en linea" o nada */}
+            {headerStatus.type !== "hidden" && (
               <div
                 className={`text-[9px] truncate ${
-                  status.type === "online"
+                  headerStatus.type === "online"
                     ? "text-[#667781] font-medium"
                     : "text-[#667781]"
                 }`}
               >
-                {status.type === "online" ? "en línea" : status.text}
+                {headerStatus.type === "online" ? "en linea" : null}
               </div>
             )}
           </div>
@@ -123,7 +96,12 @@ export function WhatsappHeaderUser({ data }: { data: WhatsappData }) {
 
           {/* Arrow */}
           <span aria-hidden="true" className="text-black">
-            <svg viewBox="0 0 24 24" height="16" preserveAspectRatio="xMidYMid meet" fill="none">
+            <svg
+              viewBox="0 0 24 24"
+              height="16"
+              preserveAspectRatio="xMidYMid meet"
+              fill="none"
+            >
               <title>ic-arrow-drop-down</title>
               <path
                 d="M11.475 14.475L7.85001 10.85C7.80001 10.8 7.76251 10.7458 7.73751 10.6875C7.71251 10.6292 7.70001 10.5667 7.70001 10.5C7.70001 10.3667 7.74585 10.25 7.83751 10.15C7.92918 10.05 8.05001 10 8.20001 10H15.8C15.95 10 16.0708 10.05 16.1625 10.15C16.2542 10.25 16.3 10.3667 16.3 10.5C16.3 10.5333 16.25 10.65 16.15 10.85L12.525 14.475C12.4417 14.5583 12.3583 14.6167 12.275 14.65C12.1917 14.6833 12.1 14.7 12 14.7C11.9 14.7 11.8083 14.6833 11.725 14.65C11.6417 14.6167 11.5583 14.5583 11.475 14.475Z"
@@ -138,7 +116,13 @@ export function WhatsappHeaderUser({ data }: { data: WhatsappData }) {
             data-icon="search-refreshed"
             className="w-6 h-6 text-black ml-2"
           >
-            <svg viewBox="0 0 24 24" height="22" width="22" preserveAspectRatio="xMidYMid meet" fill="none">
+            <svg
+              viewBox="0 0 24 24"
+              height="22"
+              width="22"
+              preserveAspectRatio="xMidYMid meet"
+              fill="none"
+            >
               <title>search-refreshed</title>
               <path
                 d="M9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L20.3 18.9C20.4833 19.0833 20.575 19.3167 20.575 19.6C20.575 19.8833 20.4833 20.1167 20.3 20.3C20.1167 20.4833 19.8833 20.575 19.6 20.575C19.3167 20.575 19.0833 20.4833 18.9 20.3L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z"
@@ -151,8 +135,8 @@ export function WhatsappHeaderUser({ data }: { data: WhatsappData }) {
           <button
             type="button"
             className="h-9 w-9 grid place-items-center rounded-full hover:bg-black/5 active:bg-black/10 transition text-black"
-            aria-label="Menú"
-            title="Menú"
+            aria-label="MenÃº"
+            title="MenÃº"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <circle cx="12" cy="5" r="1.6" />
