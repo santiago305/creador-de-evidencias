@@ -4,6 +4,7 @@ import { WhatsappInputBar } from "./WhatsappInputBar";
 import type { WhatsappData } from "./whatsappTypes";
 import respuestasClienteData from "../../data/respuestasCliente.json";
 import respuestasContinuacionAsesorData from "../../data/respuestasContinuacionAsesor.json";
+import respuestasClientePostSimulacionData from "../../data/respuestasClientePostSimulacion.json";
 import {
   MessageGroup,
   EncryptedMessage,
@@ -106,14 +107,14 @@ function getTimeOfDayParts(date: Date) {
   const hour = date.getHours();
 
   if (hour < 12) {
-    return { saludo: "Buenos dias", tramo: "manana" };
+    return { saludo: "Buenos dias", tramo: "manana", slot: "manana" as const };
   }
 
   if (hour < 19) {
-    return { saludo: "Buenas tardes", tramo: "tarde" };
+    return { saludo: "Buenas tardes", tramo: "tarde", slot: "tarde" as const };
   }
 
-  return { saludo: "Buenas noches", tramo: "noche" };
+  return { saludo: "Buenas noches", tramo: "noche", slot: "noche" as const };
 }
 
 function mulberry32(seed: number) {
@@ -150,6 +151,39 @@ function formatMoneyValue(value: string, useThousands: boolean) {
   });
 }
 
+const greetingMatchers = [
+  { slot: "manana", match: /buenos dias|buen dia|que tengas buen dia/i },
+  { slot: "tarde", match: /buenas tardes|buena tarde|que tengas buena tarde/i },
+  { slot: "noche", match: /buenas noches|buena noche|que tengas buena noche/i },
+] as const;
+
+function getGreetingSlot(text: string) {
+  for (const item of greetingMatchers) {
+    if (item.match.test(text)) return item.slot;
+  }
+  return null;
+}
+
+function hasGreeting(lines: string[]) {
+  return lines.some((line) => getGreetingSlot(line) !== null);
+}
+
+function filterPostSimulacionOptions(
+  options: string[][],
+  slot: "manana" | "tarde" | "noche",
+  allowGreeting: boolean
+) {
+  return options.filter((lines) => {
+    const slots = lines
+      .map((line) => getGreetingSlot(line))
+      .filter((value): value is "manana" | "tarde" | "noche" => value !== null);
+
+    if (slots.length === 0) return true;
+    if (!allowGreeting) return false;
+    return slots.every((item) => item === slot);
+  });
+}
+
 function linesToSpans(lines: ReactNode[]) {
   return lines.map((line, idx) => {
     const key =
@@ -170,7 +204,7 @@ export function WhatsappConversation({
     const rng = mulberry32(seed);
 
     const baseDate = parseLocalDateTime(data.fechaHora) ?? new Date();
-    const { saludo, tramo } = getTimeOfDayParts(baseDate);
+    const { saludo, tramo, slot } = getTimeOfDayParts(baseDate);
 
     const nombreCliente = data.nombre?.trim() ? data.nombre.trim() : "Pedro Vazquez";
     const nombreAsesor = data.nombreAsesor?.trim()
@@ -197,6 +231,7 @@ export function WhatsappConversation({
       lines.map((line) => line.replace(/\{asesor\}/g, nombreAsesorFirst));
 
     const continuacionesAsesor = respuestasContinuacionAsesorData;
+    const respuestasPostSimulacion = respuestasClientePostSimulacionData;
 
     const useThousandsMonto = rng() < 0.5;
     const useThousandsCuota = rng() < 0.5;
@@ -252,9 +287,22 @@ export function WhatsappConversation({
       messageStatus ?? (rng() < 0.7 ? "read" : "delivered");
 
     const replyLines = normalizeReply(pick(respuestasCliente, rng));
+    const allowPostSimGreeting = !hasGreeting(replyLines);
+    const postSimulacionOptions = filterPostSimulacionOptions(
+      respuestasPostSimulacion,
+      slot,
+      allowPostSimGreeting
+    );
+    const postSimulacionSource =
+      postSimulacionOptions.length > 0
+        ? postSimulacionOptions
+        : respuestasPostSimulacion;
+    const postSimulacionLines = normalizeReply(
+      pick(postSimulacionSource, rng)
+    );
     const replyGapMinCount = Math.max(replyLines.length - 1, 0);
 
-    const minTotal = replyGapMinCount + 3;
+    const minTotal = replyGapMinCount + 4;
     const minAllowed = Math.max(4, minTotal);
     const maxAllowed = 7;
     const totalMinutes =
@@ -262,7 +310,7 @@ export function WhatsappConversation({
         ? minAllowed + Math.floor(rng() * (maxAllowed - minAllowed + 1))
         : 7;
 
-    const gapsCount = 3 + replyGapMinCount;
+    const gapsCount = 4 + replyGapMinCount;
     const remaining = Math.max(0, totalMinutes - minTotal);
     const gapExtras = Array.from({ length: gapsCount }, () => 0);
     for (let i = 0; i < remaining; i += 1) {
@@ -276,6 +324,7 @@ export function WhatsappConversation({
     });
     const gap2 = 1 + (gapExtras[1 + replyGapMinCount] ?? 0);
     const gap3 = 1 + (gapExtras[2 + replyGapMinCount] ?? 0);
+    const gap4 = 1 + (gapExtras[3 + replyGapMinCount] ?? 0);
 
     const t1 = new Date(baseDate);
     const t2 = new Date(baseDate);
@@ -297,6 +346,13 @@ export function WhatsappConversation({
         lines: [line],
       };
     });
+    const t5 = new Date(t4);
+    t5.setMinutes(t5.getMinutes() + gap4);
+    const postSimulacionMessages = postSimulacionLines.map((line) => ({
+      side: "in" as const,
+      time: formatTimeShort(t5),
+      lines: [line],
+    }));
 
     const baseMessages: {
       side: "in" | "out";
@@ -323,6 +379,7 @@ export function WhatsappConversation({
         status: statusForMessages,
         lines: detalleBase,
       },
+      ...postSimulacionMessages,
     ];
 
     return baseMessages;
