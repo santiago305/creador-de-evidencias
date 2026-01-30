@@ -4,6 +4,7 @@ import type { InputProps } from "../types";
 export function Input({
   label,
   type = "text",
+  id,
   value,
   onChange,
   placeholder,
@@ -18,6 +19,7 @@ export function Input({
 
       <div className="mt-1 rounded-2xl border border-slate-200 bg-white shadow-sm transition focus-within:border-slate-300 focus-within:ring-2 focus-within:ring-slate-900/10">
         <input
+          id={id}
           type={type}
           value={value}
           onChange={onChange}

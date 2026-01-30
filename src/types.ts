@@ -20,6 +20,7 @@ export type SavedData = FormState;
 export interface InputProps {
   label: string;
   type?: string;
+  id?: string;
   value: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;

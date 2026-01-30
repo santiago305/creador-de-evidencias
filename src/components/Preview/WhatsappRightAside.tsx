@@ -69,7 +69,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
             <div className="py-3 border-b-[1.5px] border-black/5 bg-white">
               <div className="flex flex-col items-center gap-2">
                 {/* avatar */}
-                <div className="h-32 w-32 rounded-full bg-slate-300 overflow-hidden">
+                <div className="h-26 w-26 rounded-full bg-slate-300 overflow-hidden">
                   <svg
                     viewBox="0 0 48 48"
                     className="rounded-full w-full h-full bg-[#F7F5F3] border border-[#e0dfde]"
@@ -84,7 +84,7 @@ export function WhatsappRightAside({ data }: { data: WhatsappData }) {
 
                 {/* name + phone */}
                 <div className="min-w-0 flex flex-col items-center">
-                  <div className="text-[20px] font-normal text-slate-900 truncate">
+                  <div className="text-[20px] font-normal text-slate-900 truncate p-1 text-wrap">
                     {data.nombre?.trim() ? data.nombre : "Sin nombre"}
                   </div>
 

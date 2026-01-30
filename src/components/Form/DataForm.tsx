@@ -34,24 +34,28 @@ export function DataForm({
         <div className="grid grid-cols-1 gap-3">
           <Input
             label="Nombre de asesor"
+            id="nombre-asesor"
             value={form.nombreAsesor}
             onChange={onChange("nombreAsesor")}
             placeholder="Ej: Ana Lopez"
           />
           <Input
             label="DNI"
+            id="dni"
             value={form.dni}
             onChange={onChange("dni")}
             placeholder="Ej: 12345678"
           />
           <Input
             label="Telefono"
+            id="telefono"
             value={form.telefono}
             onChange={onChange("telefono")}
             placeholder="Ej: 999 999 999"
           />
           <Input
             label="Nombre"
+            id="nombre-cliente"
             value={form.nombre}
             onChange={onChange("nombre")}
             placeholder="Ej: Juan PÇ¸rez"
@@ -60,6 +64,7 @@ export function DataForm({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <Input
               label="Monto"
+              id="monto"
               value={form.monto}
               onChange={onChange("monto")}
               placeholder="Ej: 1500"
@@ -67,6 +72,7 @@ export function DataForm({
             />
             <Input
               label="Tasa"
+              id="tasa"
               value={form.tasa}
               onChange={onChange("tasa")}
               placeholder="Ej: 2.5%"
@@ -76,12 +82,14 @@ export function DataForm({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <Input
               label="Cuota"
+              id="cuota"
               value={form.cuota}
               onChange={onChange("cuota")}
               placeholder="Ej: 250"
             />
             <Input
               label="Plazo"
+              id="plazo"
               value={form.plazo}
               onChange={onChange("plazo")}
               placeholder="Ej: 12 meses"
@@ -90,6 +98,7 @@ export function DataForm({
 
           <Input
             label="Fecha y hora"
+            id="fecha-hora"
             type="datetime-local"
             value={form.fechaHora}
             onChange={onChange("fechaHora")}
@@ -98,6 +107,7 @@ export function DataForm({
 
           <Input
             label="Duracion (min)"
+            id="duracion"
             value={form.duracion}
             onChange={onChange("duracion")}
             placeholder="Ej: 6"
