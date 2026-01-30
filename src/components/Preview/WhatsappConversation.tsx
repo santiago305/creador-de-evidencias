@@ -5,6 +5,7 @@ import type { WhatsappData } from "./whatsappTypes";
 import respuestasClienteData from "../../data/respuestasCliente.json";
 import respuestasContinuacionAsesorData from "../../data/respuestasContinuacionAsesor.json";
 import respuestasClientePostSimulacionData from "../../data/respuestasClientePostSimulacion.json";
+import respuestasCierreAsesorPostSimulacionData from "../../data/respuestasCierreAsesorPostSimulacion.json";
 import {
   MessageGroup,
   EncryptedMessage,
@@ -232,6 +233,8 @@ export function WhatsappConversation({
 
     const continuacionesAsesor = respuestasContinuacionAsesorData;
     const respuestasPostSimulacion = respuestasClientePostSimulacionData;
+    const cierresAsesorPostSimulacion =
+      respuestasCierreAsesorPostSimulacionData;
 
     const useThousandsMonto = rng() < 0.5;
     const useThousandsCuota = rng() < 0.5;
@@ -302,7 +305,7 @@ export function WhatsappConversation({
     );
     const replyGapMinCount = Math.max(replyLines.length - 1, 0);
 
-    const minTotal = replyGapMinCount + 4;
+    const minTotal = replyGapMinCount + 5;
     const minAllowed = Math.max(4, minTotal);
     const maxAllowed = 7;
     const totalMinutes =
@@ -310,7 +313,7 @@ export function WhatsappConversation({
         ? minAllowed + Math.floor(rng() * (maxAllowed - minAllowed + 1))
         : 7;
 
-    const gapsCount = 4 + replyGapMinCount;
+    const gapsCount = 5 + replyGapMinCount;
     const remaining = Math.max(0, totalMinutes - minTotal);
     const gapExtras = Array.from({ length: gapsCount }, () => 0);
     for (let i = 0; i < remaining; i += 1) {
@@ -325,6 +328,7 @@ export function WhatsappConversation({
     const gap2 = 1 + (gapExtras[1 + replyGapMinCount] ?? 0);
     const gap3 = 1 + (gapExtras[2 + replyGapMinCount] ?? 0);
     const gap4 = 1 + (gapExtras[3 + replyGapMinCount] ?? 0);
+    const gap5 = 1 + (gapExtras[4 + replyGapMinCount] ?? 0);
 
     const t1 = new Date(baseDate);
     const t2 = new Date(baseDate);
@@ -348,6 +352,8 @@ export function WhatsappConversation({
     });
     const t5 = new Date(t4);
     t5.setMinutes(t5.getMinutes() + gap4);
+    const t6 = new Date(t5);
+    t6.setMinutes(t6.getMinutes() + gap5);
     const postSimulacionMessages = postSimulacionLines.map((line) => ({
       side: "in" as const,
       time: formatTimeShort(t5),
@@ -380,6 +386,12 @@ export function WhatsappConversation({
         lines: detalleBase,
       },
       ...postSimulacionMessages,
+      {
+        side: "out" as const,
+        time: formatTimeShort(t6),
+        status: statusForMessages,
+        lines: [pick(cierresAsesorPostSimulacion, rng)],
+      },
     ];
 
     return baseMessages;
@@ -416,17 +428,22 @@ export function WhatsappConversation({
 
                 return (
                   <MessageGroup key={groupKey}>
-                    {group.map((item, itemIdx) => (
+                    {group.map((item, itemIdx) => {
+                      const overallIdx = idx + itemIdx;
+                      const isLast = overallIdx === messages.length - 1;
+                      return (
                       <Bubble
                         key={`${groupKey}-${itemIdx}`}
                         side={item.side}
                         firstInGroup={itemIdx === 0}
                         time={item.time}
                         status={item.status}
+                        id={isLast ? "ult-mensaje" : undefined}
                       >
                         {linesToSpans(item.lines)}
                       </Bubble>
-                    ))}
+                      );
+                    })}
                   </MessageGroup>
                 );
               })}

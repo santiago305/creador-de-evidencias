@@ -154,12 +154,14 @@ export function Bubble({
   firstInGroup,
   time,
   status,
+  id,
   children,
 }: {
   side: "in" | "out";
   firstInGroup?: boolean;
   time?: string;
   status?: MsgStatus;
+  id?: string;
   children: React.ReactNode;
 }) {
   const isOut = side === "out";
@@ -208,7 +210,10 @@ export function Bubble({
   })();
 
   return (
-    <div className={`flex ${isOut ? "justify-end" : "justify-start"} px-15.75`}>
+    <div
+      id={id}
+      className={`flex ${isOut ? "justify-end" : "justify-start"} px-15.75`}
+    >
       <div className="relative max-w-[70%] flex-none text-[14.2px] leading-4.75">
         {/* Tail SOLO si es primer mensaje del bloque */}
         {firstInGroup && (
