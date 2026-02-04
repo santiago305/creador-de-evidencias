@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base:'https://santiago305.github.io/creador-de-evidencias',
 })
